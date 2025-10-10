@@ -1,103 +1,262 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Index</title>
-    </head>
-    <body>
-        <!--O header e como a cabeça do site a parte que se ver primeiro e carrega informações esseciais como o título do site e o menu de navegação-->
-        <header>
-            <!--Logo a baixo temos o título principal dentro da pagina de navegção.-->
-            <h1>Portal UNIDOS SOMOS + FORTES</h1>
-            <!--Logo abaixo temos o menu de navegação para navegar entre as paginas do site, com uma lista não ordenada e suas linhas onde cada linha tem um link que envia para outra página do site-->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="ongs.html">ONGs</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="voluntariado.html">Voluntariado</a></li>
-                    <li><a href="doacoes.html">Doações</a></li>
-                    <li><a href="transparencia.html">Transparência</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="login.html">Entre</a> ou <a href="cadastro.html">Cadastre-se</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!--O main é o corpo do site, apesar de ter outra tag com esse nome <body>, as novas politica criaram a tag <main> para melhor estruturar o código-->
-        <main>
-            <!--O main é contituído com sessões <section> e artigos <article>, que sao quadros de informações dentro do site, eles servem para organizar separadamente cara parte do corpo do site ou de forma conjuta atribuir um unuco design. -->
-            <section class="banner">
-                <img class="foto_banner" src="../imagens/mulher_com_cachorro.png" width="90%" height="90%">
-                <h2 class="titulo_banner">A força de uma boa ação começa em você — juntos, transformamos boas intenções em realidade.</h2>
-                <p class="frase_banner">Participe dessa rede do bem: <a href="doacoes.html">doe</a>, <a href="cadastro.html">seja voluntário</a> ou <a href="projetos.html">apoie uma ONG</a></p>
-            </section>
+<html lang="pt-BR">
+  <head>
+    <!-- Define a codificação e a escala inicial para dispositivos móveis -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <section class="Sobre">
-                <h2>Nossa Essência</h2>
-                <p>O desejo de <strong>unir pessoas, causas e propósitos</strong> deu origem ao <strong>JuntosSomos+Fortes</strong>, um espaço criado para conectar <strong>ONGs, voluntários e doadores</strong>, promovendo a colaboração e transformando boas intenções em ações concretas.</p>
-                <p>Mais do que um portal, somos uma <strong>comunidade movida por empatia</strong>, construída sobre o respeito e o desejo de fazer o bem juntos. Cada gesto aqui — seja uma doação, uma hora de trabalho ou uma nova parceria — é uma forma de fortalecer quem se dedica a mudar o mundo.</p>
-                <p>No <strong>JuntosSomos+Fortes</strong>, acreditamos que a <strong>união é o que transforma</strong>. Quando cada um faz a sua parte, todos ganham: pessoas, animais, comunidades e o planeta.</p>
-                <p><em>Conheça o projeto que conecta ONGs, voluntários e doadores em uma única rede de solidariedade.</em></p>
-                <p><a href="sobre.html">Sobre o portal</a></p>
-            </section>
+    <!-- Meta descrição: ajuda SEO e o texto exibido nos resultados de busca -->
+    <meta name="description" content="Conectamos ONGs, voluntários e doadores para transformar boas intenções em ações reais. Participe, doe ou cadastre sua ONG.">
 
-            <section class="projetos">
-                <h2>Projetos que tranformam vidas</h2>
+    <!-- Título exibido na aba do navegador -->
+    <title>JuntosSomos+Fortes</title>
+  </head>
+  <body>
 
-                <article>
-                    <h3>Vida em Quatro Patas</h3>
-                    <p><strong>Causa:</strong> Resgate e cuidado de animais abandonados</p>
-                    <p>Nas ruas, cada olhar carrega uma história — e nenhuma vida deveria enfrentar o abandono sozinha. Este projeto transforma solidão em cuidado, resgata cães e gatos, oferece abrigo, tratamento e a chance de reencontrarem o amor em um novo lar.</p>
-                    <p><a href="projetos.html">Coneça o projeto</a></p>
-                </article>
+    <!-- Link de acessibilidade que permite ir direto ao conteúdo principal -->
+    <a href="#conteudo">Ir para o conteúdo principal</a>
 
-                <article>
-                    <h3>Aprender e Crescer</h3>
-                   <p><strong>Causa:</strong> Educação e oportunidades para crianças e  adolescentes</p>
-                    <p>Acreditamos que o futuro começa com acesso à educação de qualidade. Este projeto oferece reforço escolar, oficinas criativas e cursos gratuitos para jovens de famílias com recursos limitados.</p>
-                    <p><a href="projetos.html">Saiba mais</a></p>
-                </article>
+    <!--
+      HEADER: Cabeçalho do site.
+      Contém o nome da marca e a navegação principal entre as páginas.
+    -->
+    <header>
+      <!-- Nome do portal. Pode futuramente receber link para a página inicial -->
+      <div class="titulodapagina">JuntosSomos+Fortes</div>
 
-                <article>
-                    <h3>Rede Solidária do Bem</h3>
-                    <p><strong>Causa:</strong> Combate à fome e apoio a pessoas em vulnerabilidade</p>
-                    <p>De mãos dadas, levamos alimento e esperança a quem mais precisa. O projeto organiza mutirões de preparo de marmitas, arrecadação de alimentos e doações para orfanatos e abrigos.</p>
-                    <p><a href="projetos.html">Ver mais detalhes</a></p>
-                </article>
+      <!--
+        NAV: Menu de navegação principal do site.
+        aria-label ajuda leitores de tela a identificar a função da navegação.
+        aria-current="page" marca a página atual como ativa.
+      -->
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Página Inicial</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="doacoes.html">Doações</a></li>
+          <li><a href="transparencia.html">Transparência</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="login.html">Entre</a> ou <a href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </header>
 
-                <p>Esses são apenas alguns dos projetos que mudam vidas todos os dias.</p>
-                <p><a href="projetos.html">Ver todos os projetos</a></p>
-            </section>
+    <!--
+      MAIN: Conteúdo principal da página.
+      Estruturado em seções para leitura fluida e semântica clara.
+    -->
+    <main id="conteudo">
+      <!-- Título principal da página -->
+      <h1>JuntosSomos+Fortes</h1>
 
-            <section>
-                <h2>Histórias que inspiram</h2>
-                <p>Cada gesto faz a diferença. Conheça quem já viveu o impacto de nossas ações.</p>
+      <!--
+        SEÇÃO: Banner (ou hero section)
+        Apresenta o slogan principal e links para ações importantes.
+      -->
+      <section class="banner">
+        <img
+          class="foto_banner"
+          src="../imagens/mulher_com_cachorro.png"
+          width="100%"
+          alt="Mulher idosa abraçando cachorro de médio porte e de pelos curtos em ambiente com árvores, grama e folhas secas"
+        >
+        <h2 class="titulo_banner">A força de uma boa ação começa em você — juntos, transformamos boas intenções em realidade.</h2>
+        <p class="frase_banner">
+          Participe dessa rede do bem:
+          <a href="doacoes.html">doe</a>,
+          <a href="cadastro.html">seja voluntário</a> ou
+          <a href="projetos.html">apoie uma ONG</a>
+        </p>
+      </section>
 
-                <article>
-                    <p>“Eu encontrei a Mel em um abrigo da ONG, magrinha e assustada. Hoje ela é parte da família. Ver o amor que esses voluntários têm pelos animais é inspirador.”</p>
-                    <img src="../imagens/foto_mel.jpg" width="90%" height="90%">
-                    <p><em>— Carla Menezes, adotante</em></p>
-                </article>
+      <!-- Seção de apresentação da essência do portal -->
+      <section class="sobre">
+        <h2>Nossa Essência</h2>
+        <p>O desejo de <strong>unir pessoas, causas e propósitos</strong> deu origem ao <strong>JuntosSomos+Fortes</strong>, um espaço criado para conectar <strong>ONGs, voluntários e doadores</strong>, promovendo a colaboração e transformando boas intenções em ações concretas.</p>
+        <p>Mais do que um portal, somos uma <strong>comunidade movida por empatia</strong>, construída sobre o respeito e o desejo de fazer o bem juntos. Cada gesto aqui — seja uma doação, uma hora de trabalho ou uma nova parceria — é uma forma de fortalecer quem se dedica a mudar o mundo.</p>
+        <p>No <strong>JuntosSomos+Fortes</strong>, acreditamos que a <strong>união é o que transforma</strong>. Quando cada um faz a sua parte, todos ganham: pessoas, animais, comunidades e o planeta.</p>
+        <p><em>Conheça o projeto que conecta ONGs, voluntários e doadores em uma única rede de solidariedade.</em></p>
+        <p><a href="sobre.html">Sobre o portal</a></p>
+      </section>
 
-                <article>
-                    <p>“Meu filho nunca tinha tido acesso a um computador. Depois do curso de informática do Instituto, ele já fala em ser programador. Isso não tem preço.”</p>
-                    <img src="../imagens/filho_sonho.jpg">
-                    <p><em>— Luciana Alves, mãe de aluno</em></p>
-                </article>
-                
-                <article>
-                    <p>“A comida é o primeiro passo, mas o verdadeiro propósito é devolver dignidade. Cada entrega é uma mensagem de que ninguém está sozinho.”</p>
-                    <img src="../imagens/doacao_de_comida.png" width="90%" height="90%">
-                    <p><em>— Kellen Nogueira, coordenadora da Rede Solidária do Bem</em></p>
-                </article>
-            </section>
-            <section class="destaques">
+      <!--
+        Seção com destaque de projetos.
+        Cada projeto é separado dentro de <article> para dar contexto semântico.
+      -->
+      <section class="projetos">
+        <h2>Projetos que transformam vidas</h2>
 
-                
-            </section>
-        </main>
-    </body>
+        <article>
+          <h3>Vida em Quatro Patas</h3>
+          <p><strong>Causa:</strong> Resgate e cuidado de animais abandonados</p>
+          <p>Nas ruas, cada olhar carrega uma história — e nenhuma vida deveria enfrentar o abandono sozinha. Este projeto transforma solidão em cuidado, resgata cães e gatos, oferece abrigo, tratamento e a chance de reencontrarem o amor em um novo lar.</p>
+          <p><a href="projetos.html">Conheça o projeto</a></p>
+        </article>
+
+        <article>
+          <h3>Aprender e Crescer</h3>
+          <p><strong>Causa:</strong> Educação e oportunidades para crianças e adolescentes</p>
+          <p>Acreditamos que o futuro começa com acesso à educação de qualidade. Este projeto oferece reforço escolar, oficinas criativas e cursos gratuitos para jovens de famílias com recursos limitados.</p>
+          <p><a href="projetos.html">Saiba mais</a></p>
+        </article>
+
+        <article>
+          <h3>Rede Solidária do Bem</h3>
+          <p><strong>Causa:</strong> Combate à fome e apoio a pessoas em vulnerabilidade</p>
+          <p>De mãos dadas, levamos alimento e esperança a quem mais precisa. O projeto organiza mutirões de preparo de marmitas, arrecadação de alimentos e doações para orfanatos e abrigos.</p>
+          <p><a href="projetos.html">Ver mais detalhes</a></p>
+        </article>
+
+        <p>Esses são apenas alguns dos projetos que mudam vidas todos os dias.</p>
+        <p><a href="projetos.html">Ver todos os projetos</a></p>
+      </section>
+
+      <!--
+        Seção de depoimentos e histórias reais.
+        As imagens utilizam loading="lazy" para otimizar o carregamento.
+      -->
+      <section class="depoimentos">
+        <h2>Histórias que inspiram</h2>
+        <p>Cada gesto faz a diferença. Conheça quem já viveu o impacto de nossas ações.</p>
+
+        <article>
+          <p>“Eu encontrei a Mel em um abrigo da ONG, magrinha e assustada. Hoje ela é parte da família. Ver o amor que esses voluntários têm pelos animais é inspirador.”</p>
+          <img src="../imagens/foto_mel.jpg" alt="Cadela Mel abraçada por sua tutora" width="100%" loading="lazy">
+          <p><em>— Carla Menezes, adotante</em></p>
+        </article>
+
+        <article>
+          <p>“Meu filho nunca tinha tido acesso a um computador. Depois do curso de informática do Instituto, ele já fala em ser programador. Isso não tem preço.”</p>
+          <img src="../imagens/filho_sonho.jpg" width="100%" alt="Menino tendo aula de informática em uma sala de aula com instrutores" loading="lazy">
+          <p><em>— Luciana Alves, mãe de aluno</em></p>
+        </article>
+        
+        <article>
+          <p>“A comida é o primeiro passo, mas o verdadeiro propósito é devolver dignidade. Cada entrega é uma mensagem de que ninguém está sozinho.”</p>
+          <img src="../imagens/doacao_de_comida.png" width="100%" alt="Conjunto de pessoas preparando marmitas para servir aos necessitados" loading="lazy">
+          <p><em>— Kellen Nogueira, coordenadora da Rede Solidária do Bem</em></p>
+        </article>
+      
+        <p>Essas são apenas algumas das histórias que mostram o poder da união.</p>
+        <p><a href="projetos.html">Leia mais histórias</a> | <a href="cadastro.html">Participe também</a></p>
+      </section>
+
+      <!-- Seção de destaques e atalhos rápidos para páginas importantes -->
+      <section class="destaques">
+        <h2>Destaques do portal</h2>
+        <p>Explore os principais caminhos do portal e encontre a melhor forma de participar, ajudar ou se informar.</p>
+
+        <h3>Seja voluntário</h3>
+        <p>Doe seu tempo e suas habilidades para transformar vidas e fortalecer projetos sociais.</p>
+        <p><a href="voluntariado.html">Quero ajudar</a></p>
+
+        <h3>Faça uma doação</h3>
+        <p>Apoie causas reais com transparência e acompanhe de perto o impacto que você ajuda a criar.</p>
+        <p><a href="doacoes.html">Doar agora</a></p>
+
+        <h3>Cadastre sua ONG</h3>
+        <p>Dê visibilidade à sua instituição, divulgue projetos e conecte-se com pessoas que querem ajudar.</p>
+        <p><a href="cadastro.html">Cadastrar ONG</a></p>
+
+        <h3>Histórias que inspiram</h3>
+        <p>Acompanhe notícias, relatos e aprendizados que mostram o poder da solidariedade em ação.</p>
+        <p><a href="blog.html">Ler o blog</a></p>
+      </section>
+
+      <!-- Seção de transparência: mostra resultados e impacto real -->
+      <section class="transparencia">
+        <h2>Transparência e Impacto Real</h2>
+        <h3>Nossos resultados falam por si. Veja o impacto que construímos juntos.</h3>
+
+        <h4>Vida em Quatro Patas</h4>
+        <p>Mais de 200 animais resgatados, cuidados e preparados para adoção responsável.</p>
+
+        <h4>Instituto Aprender e Crescer</h4>
+        <p>Mais de 400 crianças e adolescentes atendidos com acesso a cursos gratuitos, reforço escolar e oficinas educativas.</p>
+
+        <h4>Rede Solidária do Bem</h4>
+        <p>Mais de 150 mil refeições distribuídas para famílias e pessoas em situação de vulnerabilidade.</p>
+      </section>
+
+      <!-- Chamada final para ação (CTA) -->
+      <section>
+        <h2>Toda ajuda conta.</h2>
+        <p>Quando pessoas se unem por um mesmo propósito, o impossível se torna realidade.</p>
+        <p><a href="cadastro.html">Participe agora</a></p>
+      </section>
+    </main>
+
+    <!--
+      FOOTER: Rodapé do site.
+      Contém links secundários, informações institucionais e de contato.
+    -->
+    <footer>
+
+      <!-- Identidade e frase institucional -->
+      <section>
+        <h2 class="titulorodape">JuntosSomos+Fortes</h2>
+        <p>Unindo pessoas, ONGs e apoiadores para transformar empatia em ação.</p>
+        <p>Cada gesto conta — e o seu faz a diferença.</p>
+      </section>
+
+      <!-- Navegação do rodapé, dividida em blocos semânticos -->
+      <section>
+        <nav aria-label="Navegação do rodapé">
+
+          <!-- Bloco 1: Ações -->
+          <article>
+            <h3>Ações</h3>
+            <ul>
+              <li><a href="cadastro.html">Participe</a></li>
+              <li><a href="voluntariado.html">Voluntariado</a></li>
+              <li><a href="doacoes.html">Doações</a></li>
+              <li><a href="cadastro.html">Cadastre sua ONG</a></li>
+            </ul>
+          </article>
+
+          <!-- Bloco 2: Institucional -->
+          <article>
+            <h3>Institucional</h3>
+            <ul>
+              <li><a href="sobre.html">Sobre nós</a></li>
+              <li><a href="projetos.html">Projetos</a></li>
+              <li><a href="transparencia.html">Transparência</a></li>
+              <li><a href="blog.html">Blog e Notícias</a></li>
+            </ul>
+          </article>
+
+          <!-- Bloco 3: Suporte -->
+          <article>
+            <h3>Suporte e Contato</h3>
+            <ul>
+              <li><a href="contato.html">Fale conosco</a></li>
+            </ul>
+          </article>
+
+        </nav>
+      </section>
+
+      <!-- Seção com contatos diretos -->
+      <section>
+        <h3>Contato:</h3>
+        <address>
+          <!-- Link de e-mail (abre cliente de e-mail do usuário) -->
+          <p><a href="mailto:contato@juntossomosmaisfortes.org">contato@juntossomosmaisfortes.org</a></p>
+          <!-- Link telefônico (abre discador em dispositivos móveis) -->
+          <p><a href="tel:+5561912345678">(61) 9 1234-5678</a></p>
+          <p>Brasília — DF</p>
+        </address>
+      </section>
+
+      <!-- Direitos autorais e créditos -->
+      <section>
+        <p>Copyright © 2025 JuntosSomos+Fortes — Todos os direitos reservados.</p>
+        <p>Desenvolvido com coração por pessoas que acreditam no poder da solidariedade.</p>
+      </section>
+    </footer>
+
+  </body>
 </html>
