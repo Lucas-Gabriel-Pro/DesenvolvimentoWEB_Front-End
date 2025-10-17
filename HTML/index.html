@@ -8,7 +8,7 @@
     <!-- Meta descrição: ajuda SEO e o texto exibido nos resultados de busca -->
     <meta name="description" content="Conectamos ONGs, voluntários e doadores para transformar boas intenções em ações reais. Participe, doe ou cadastre sua ONG.">
 
-    <!-- <link rel="stylesheet" href="../Folha_de_estilo/estilo.css">-->
+    <link rel="stylesheet" href="../Folha_de_estilo/estilo.css">
 
     <!-- Título exibido na aba do navegador -->
     <title>JuntosSomos+Fortes</title>
@@ -22,26 +22,34 @@
       HEADER: Cabeçalho do site.
       Contém o nome da marca e a navegação principal entre as páginas.
     -->
-    <header>
+    <header id="parte_superior">
       <!-- Nome do portal. Pode futuramente receber link para a página inicial -->
-      <div class="titulodapagina">JuntosSomos+Fortes</div>
+      <div id="titulo_da_pagina">JuntosSomos+Fortes</div>
 
       <!--
         NAV: Menu de navegação principal do site.
         aria-label ajuda leitores de tela a identificar a função da navegação.
         aria-current="page" marca a página atual como ativa.
       -->
-      <nav aria-label="Navegação principal">
-        <ul>
+      <nav aria-label="Navegação principal" id="navegacao_principal">
+        <a class="logo" href="index.html">JuntosSomos+Fortes</a>
+
+        <input type="checkbox" id="toggle-menu" class="toggle" aria-label="Abrir menu">
+        <label for="toggle-menu" class="hamburger" aria-hidden="true" title="Menu">
+        ☰
+        </label>
+
+        <ul id="menu">
           <li><a href="index.html" aria-current="page">Página Inicial</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="voluntariado.html">Voluntariado</a></li> 
           <li><a href="doacoes.html">Doações</a></li>
           <li><a href="transparencia.html">Transparência</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="login.html">Entre</a> ou <a href="cadastro.html">Cadastre-se</a></li>
+          <li><a href="login.html">Entre</a></li>
+          <li><a href="cadastro.html">Incrição</a></li> 
         </ul>
       </nav>
     </header>
@@ -52,7 +60,7 @@
     -->
     <main id="conteudo">
       <!-- Título principal da página -->
-      <h1>JuntosSomos+Fortes</h1>
+      <h1>A união que transforma empatia em ação</h1>
 
       <!--
         SEÇÃO: Banner (ou hero section)
@@ -248,7 +256,7 @@
       FOOTER: Rodapé do site.
       Contém links secundários, informações institucionais e de contato.
     -->
-    <footer>
+    <footer id="rodape">
       
       <!-- Identidade e frase de impacto -->
       <section>
@@ -277,7 +285,7 @@
             <h3>Institucional</h3>
             <ul>
               <li><a href="sobre.html" >Sobre nós</a></li>
-              <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+              <li><a href="projetos.html">Projetos</a></li>
               <li><a href="transparencia.html">Transparência</a></li>
               <li><a href="blog.html">Blog e Notícias</a></li>
               <li><a href="index.html#mvv">Missão, Visão e Valores</a></li>
@@ -314,7 +322,7 @@
       <!-- Direitos autorais e créditos -->
       <section>
         <p>© 2025 JuntosSomos+Fortes — Todos os direitos reservados.</p>
-        <p>Desenvolvido com coração por pessoas que acreditam no poder da solidariedade.</p>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/lucas-gabriel-de-souza-silva-5967b6378/" target="_blank" rel="noopener">Lucas Gabriel</a></p>
       </section>
     </footer>
 

@@ -1,33 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Doações - JuntosSomos+Fortes</title>
-    </head>
-    <body>
-        <header>
-            <h1>Doações</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="voluntariado.html">Voluntariado</a></li>
-                    <li><a href="doacoes.html" aria-current="page">Doações</a></li>
-                    <li><a href="transparencia.html">Transparência</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="login.html">entre</a> ou <a href="cadastro.html">Cadastre-se</a></li>
-                </ul>
-            </nav>
-        </header>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Doações - JuntosSomos+Fortes</title>
+  </head>
+  <body>
+    <a href="#conteudo">Ir para o conteúdo principal</a>
 
-        <footer>
+    <header>
+        <div class="titulodapagina">JuntosSomos+Fortes</div>
+        <nav aria-label="Navegação principal">
+          <ul>
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="voluntariado.html">Voluntariado</a></li>
+          <li><a href="doacoes.html" aria-current="page">Doações</a></li>
+          <li><a href="transparencia.html">Transparência</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="login.html">entre</a> ou <a href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <h1>Doações</h1>
+
+      <p id="intro">Cada contribuição fortalece quem mais precisa. Você pode doar valores (PIX, transferência, cartão) ou itens/produtos. Transparência total e recibo disponíveis.</p>
+
+      <section aria-labelledby="como-doar">
+        <h2 id="como-doar">Como doar</h2>
+
+        <details>
+          <summary><strong>Doação via PIX</strong></summary>
+          <p><strong>Chave PIX:</strong> doacoes@juntossomosmaisfortes.org</p>
+          <p><strong>Nome/Recebedor:</strong> Instituto JuntosSomos+Fortes</p>
+          <p><strong>CNPJ:</strong> 12.345.678/0001-99</p>
+
+          <!-- Placeholder de QR (substitua o src por sua imagem real do QR) -->
+          <figure>
+            <img src="../imagens/qrcode_pix.png"
+                 alt="QR Code PIX do JuntosSomos+Fortes para doação"
+                 width="240" height="240" loading="lazy">
+            <figcaption>Escaneie o QR Code acima para doar via PIX.</figcaption>
+          </figure>
+
+          <p>Após doar, você pode enviar o comprovante pelo formulário abaixo para emissão do recibo.</p>
+        </details>
+        <br>
+        <details>
+          <summary><strong>Transferência bancária</strong></summary>
+          <p><strong>Banco:</strong> Banco Itaú (111)</p>
+          <p><strong>Agência:</strong> 0001-9</p>
+          <p><strong>Conta:</strong> 12345-6 (Conta Corrente)</p>
+          <p><strong>Favorecido:</strong> Instituto Vida em Quatro Patas — CNPJ 12.345.678/0001-01</p>
+        </details>
+        <br>
+        <details>
+          <summary><strong>Transferência bancária</strong></summary>
+          <p><strong>Banco:</strong> Banco Caixa-Econômica (222)</p>
+          <p><strong>Agência:</strong> 0001-9</p>
+          <p><strong>Conta:</strong> 12345-6 (Conta Corrente)</p>
+          <p><strong>Favorecido:</strong> Instituto Aprender e Crescer — CNPJ 98.765.432/0001-02</p>
+        </details>
+        <br>
+        <details>
+          <summary><strong>Transferência bancária</strong></summary>
+          <p><strong>Banco:</strong> Banco Santander (333)</p>
+          <p><strong>Agência:</strong> 0001-7</p>
+          <p><strong>Conta:</strong> 12345-6 (Conta Corrente)</p>
+          <p><strong>Favorecido:</strong> Rede Solidária do Bem — CNPJ 24.135.678/0001-03</p>
+        </details>
+        <br>
+        <details>
+          <summary><strong>Doação de itens/produtos</strong></summary>
+          <p>Itens mais úteis no momento: alimentos não perecíveis, ração, produtos de higiene e limpeza, materiais escolares e roupas em bom estado.</p>
+          <p>Use o formulário abaixo para informar o que você deseja doar.</p>
+        </details>
+        <br>
+        <details>
+          <summary><strong>Transparência e recibo</strong></summary>
+          <p>Publicamos relatórios periódicos de entradas e saídas. Você pode solicitar <em>recibo de doação</em> ao final do formulário.</p>
+          <p><a href="transparencia.html">Acesse a página de Transparência</a></p>
+        </details>
+      </section>
+
+      <section aria-labelledby="formulario_doacao">
+        <h2 id="formulario_doacao">Formulário de doação</h2>
+
+        <form action="/processa_doacao" method="post" enctype="multipart/form-data" aria-describedby="intro">
+          <fieldset>
+            <legend>Quem doa</legend>
+
+            <label for="nome">Nome completo*</label><br>
+            <input id="nome" name="nome" type="text" required maxlength="120" autocomplete="name"><br><br>
+
+            <label for="email">E-mail*</label><br>
+            <input id="email" name="email" type="email" required maxlength="120" autocomplete="email"><br><br>
+
+            <label for="telefone">Telefone*</label><br>
+            <input id="telefone" name="telefone" type="tel" inputmode="tel" maxlength="20" autocomplete="tel" required><br><br>
+
+            <label for="cpfcnpj">CPF ou CNPJ (para recibo)</label><br>
+            <input id="cpfcnpj" name="cpfcnpj" type="text" inputmode="numeric" maxlength="18" aria-describedby="dica_documento"><br>
+            <small id="dica_documento">Digite apenas números; se CNPJ, incluir 14 dígitos.</small>
+          </fieldset>
+
+          <fieldset>
+            <legend>Tipo de doação</legend>
+
+            <p id="tipo_doacao">Selecione uma opção. O formulário se adapta apenas com HTML.</p>
+
+            <input type="radio" id="tipo-financeira" name="tipo" value="financeira" required>
+            <label for="tipo-financeira">Financeira (PIX/Transferência/Cartão)</label><br>
+
+            <input type="radio" id="tipo-itens" name="tipo" value="itens">
+            <label for="tipo-itens">Itens/Produtos</label><br>
+
+            <input type="checkbox" id="recorrente" name="recorrente" value="sim">
+            <label for="recorrente">Quero tornar a doação recorrente (mensal)</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Detalhes da doação financeira</legend>
+
+            <label for="valor">Valor (R$)</label><br>
+            <input id="valor" name="valor" type="number" step="0.01" min="1" inputmode="decimal" aria-describedby="valor-ajuda"><br>
+            <small id="valor-ajuda">Sugestões: 20, 50, 100, 200.</small><br><br>
+
+            <label for="canal">Canal utilizado</label><br>
+            <select id="canal" name="canal">
+              <option value="pix">PIX</option>
+              <option value="transferencia">Transferência</option>
+            </select><br><br>
+
+            <label for="comprovante">Anexar comprovante (opcional)</label><br>
+            <input id="comprovante" name="comprovante" type="file" accept="image/*,application/pdf"><br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Detalhes da doação de itens</legend>
+
+            <label for="lista-itens">Liste os itens (quantidade, estado, validade se for alimento):</label><br>
+            <textarea id="lista-itens" name="lista_itens" rows="5" cols="40" placeholder="Ex.: 5kg de arroz; 10kg de ração; 20 sabonetes…"></textarea><br><br>
+
+            <label for="local-entrega">Preferência de entrega/retirada</label><br>
+            <select id="local-entrega" name="local_entrega">
+              <option value="">Selecione…</option>
+              <option value="entrego_no_ponto">Entrego no ponto de coleta</option>
+              <option value="solicitar_retirada">Solicitar retirada (sujeito a disponibilidade)</option>
+              <option value="enviar_correios">Enviar por Correios/Transportadora</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Recibo e mensagem</legend>
+
+            <input type="checkbox" id="quer-recibo" name="quer_recibo" value="sim">
+            <label for="quer-recibo">Desejo recibo de doação</label><br><br>
+
+            <label for="mensagem">Mensagem (opcional)</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Deixe uma mensagem ou dedique sua doação."></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Privacidade (LGPD)</legend>
+
+            <input type="checkbox" id="lgpd" name="lgpd" value="aceito" required>
+            <label for="lgpd">Li e concordo com o uso dos meus dados para fins de contato, prestação de contas e emissão de recibo.
+            </label><br>
+            <small><a href="https://www.sejus.df.gov.br/lgpd-politica-de-privacidade-de-dados" target="_blank">Leia a Política de Privacidade</a></small>
+          </fieldset>
+          <br>
+          <button type="submit">Enviar doação</button>
+          <p><small>Ao enviar, você receberá uma confirmação por e-mail.</small></p>
+        </form>
+      </section>
+
+
+    </main>
+
+    <footer>
       
-            <!-- Identidade e frase de impacto -->
-            <section>
-                <h2>JuntosSomos+Fortes</h2>
+      <!-- Identidade e frase de impacto -->
+      <section>
+        <h2>JuntosSomos+Fortes</h2>
         <p>Unindo pessoas, ONGs e apoiadores para transformar empatia em ação.</p>
         <p>Cada gesto conta — e o seu faz a diferença.</p>
       </section>
@@ -89,8 +248,8 @@
       <!-- Direitos autorais e créditos -->
       <section>
         <p>© 2025 JuntosSomos+Fortes — Todos os direitos reservados.</p>
-        <p>Desenvolvido com coração por pessoas que acreditam no poder da solidariedade.</p>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/lucas-gabriel-de-souza-silva-5967b6378/" target="_blank" rel="noopener">Lucas Gabriel</a></p>
       </section>
     </footer>
-    </body>
+  </body>
 </html>

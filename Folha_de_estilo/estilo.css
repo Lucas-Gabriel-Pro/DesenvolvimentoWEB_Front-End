@@ -1,24 +1,121 @@
-body{
+* { box-sizing: border-box; }
+html, body { margin: 0; font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif; }
+a { text-decoration: none; }
+
+/*Cabeça*/
+#parte_superior
+{
+    background-color: #111;
+    color: #ffffff;
+}
+
+#navegacao_principal
+{
+    display: grid;
+    grid-template-columns: 1fr auto;  /* logo | botão */
+    align-items: center;
+    gap: 8px 12px;
+    padding: 12px 12px;
+    border-bottom: 1px solid #da0d0d;
+    font-size: 14px;
+}
+
+/* Logo */
+#navegacao_principal .logo
+{
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Toggle + ícone */
+#navegacao_principal .toggle
+{ 
+    display: none; 
+}
+
+#navegacao_principal .hamburger {
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#navegacao_principal .hamburger:hover,
+#navegacao_principal .hamburger:focus-visible {
+    background: #3b3535;
+    outline: none;
+}
+
+/* Menu fechado por padrão no mobile */
+#navegacao_principal #menu 
+{
+    list-style: none;
     margin: 0;
-
+    padding: 8px 0 0;
+    display: none;
+    grid-column: 1 / -1; /* ocupa largura total abaixo da linha da logo */
 }
 
-header{
-    background-color: #fa0000;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 10px;
+/* Abre quando o checkbox está marcado */
+#toggle-menu:checked ~ #menu
+{
+    display: grid;
+    gap: 6px;
+}
+
+/* Itens/links */
+#navegacao_principal #menu a
+ {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#navegacao_principal #menu a:hover,
+#navegacao_principal #menu a:focus-visible 
+{
+    background: #201468;
+    outline: none;
+}
+
+/* --- Desktop (>= 768px): vira barra horizontal e esconde hamburguer --- */
+@media (min-width: 900px) 
+{
+    #navegacao_principal
+    {
+        grid-template-columns: auto 1fr;    /* logo | menu */
+    }
+    #navegacao_principal .hamburger { display: none; }
+    #navegacao_principal #menu 
+    {
+        display: flex !important;           /* força mostrar */
+        justify-content: flex-end;
+        gap: 16px;
+        padding: 0;
+    }
+
+    #navegacao_principal .menu a 
+    {
+        padding: 8px 10px;
+    }
+}
+
+/*Rodapé*/
+
+#rodape
+{
+    background-color: black;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main{
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 10px;
-}
-
+/*
+a:link
+a:visited 
+a:hover 
+a:active
+*/

@@ -3,25 +3,399 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Conectamos ONGs, voluntários e doadores para transformar boas intenções em ações reais. Participe, doe ou cadastre sua ONG.">
         <title>Transparência - JuntosSomos+Fortes</title>
     </head>
     <body>
+        <a href="#conteudo">Ir para o conteúdo principal</a>
+
         <header>
-            <h1>Transparência</h1>
-            <nav>
+            <div class="titulodapagina">JuntosSomos+Fortes</div>
+            <nav aria-label="Navegação principal">
                 <ul>
                     <li><a href="index.html">Página Inicial</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
                     <li><a href="voluntariado.html">Voluntariado</a></li>
                     <li><a href="doacoes.html">Doações</a></li>
-                    <li><a href="transparencia.html">Transparência</a></li>
+                    <li><a href="transparencia.html" aria-current="page">Transparência</a></li>
                     <li><a href="contato.html">Contato</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="login.html">entre</a> ou <a href="cadastro.html">Cadastre-se</a></li>
                 </ul>
             </nav>
+            
         </header>
+        
+        <main>
+
+            <h1>Transparência</h1>
+
+            <section aria-label="indice_secoes">
+                <nav id="indice_secoes">
+                    <p><strong>Acesso rápido:</strong></p>
+                    <ul>
+                        <li><a href="#principios">Princípios</a></li>
+                        <li><a href="#resumo">Resumo do período</a></li>
+                        <li><a href="#receitas">Receitas</a></li>
+                        <li><a href="#despesas">Despesas</a></li>
+                        <li><a href="#indicadores">Projetos & Indicadores</a></li>
+                        <li><a href="#documentos">Central de documentos</a></li>
+                        <li><a href="#auditoria">Auditoria & Conformidade</a></li>
+                        <li><a href="#prestacao">Prestação de contas</a></li>
+                        <li><a href="#faq">Perguntas frequentes</a></li>
+                        <li><a href="#denuncias">Canal de denúncias</a></li>
+                        <li><a href="#changelog">Histórico de mudanças</a></li>
+                    </ul>
+                    <p><small>Última atualização: <time datetime="2025-10-16">16 de outubro de 2025</time></small></p>    
+                </nav>
+            </section>
+
+            <section id="principios" aria-labelledby="titulo-principios">
+                <h2 id="titulo-principios">Princípios de transparência</h2>
+                <ul>
+                    <li><strong>Clareza:</strong> linguagem simples, dados abertos e fontes citadas.</li>
+                    <li><strong>Rastreabilidade:</strong> cada valor tem origem, destino e justificativa.</li>
+                    <li><strong>Atualidade:</strong> atualização mensal com data e responsável.</li>
+                    <li><strong>Privacidade:</strong> dados pessoais tratados conforme a LGPD.</li>
+                </ul>
+            </section>
+
+            <section id="resumo" aria-labelledby="titulo-resumo">
+                <h2 id="titulo-resumo">Resumo do período </h2>
+                
+                <h3>Outubro/2025</h3>
+                <p>Este é um panorama rápido das finanças e atividades do período.</p>
+
+                <!-- Barras nativas para leitura rápida -->
+                <div role="group" aria-labelledby="lbl-uso-dos-recursos">
+                    <p id="lbl-uso-dos-recursos"><strong>Distribuição dos gastos</strong> (percentual do total do mês)</p>
+                    <p>Projetos sociais 62%</p>
+                    <p>Operacional 21%</p>
+                    <p>Captação & Comunicação 11%</p>
+                    <p>Taxas & Bancos 6%</p>
+                </div>
+
+                <details>
+                    <summary>Ver critério de classificação de despesas</summary>
+                    <p><strong>Projetos sociais:</strong> gastos diretamente ligados à execução das ações (materiais, bolsas, logística).</p>
+                    <p><strong>Operacional:</strong> custos de manutenção do portal e equipe.</p>
+                    <p><strong>Captação & Comunicação:</strong> campanhas, peças e serviços de divulgação.</p>
+                    <p><strong>Taxas & Bancos:</strong> tarifas de pagamento, boletos, gateways.</p>
+                </details>
+            </section>
+
+            <section id="receitas" aria-labelledby="titulo-receitas">
+                <h2 id="titulo-receitas">Receitas</h2>
+                <h3>Outubro/2025</h3>
+                <p>Valores em R$ (reais). Substitua os exemplos pelos valores oficiais.</p>
+                <table border="1" cellpadding="12" cellspacing="0">
+                    <caption>Origem das receitas no período</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Data</th>
+                            <th scope="col">Origem</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Valor (R$)</th>
+                            </tr>
+                    </thead>
+          
+                    <tbody>
+                        <tr>
+                            <td><time datetime="2025-10-05">05/10</time></td>
+                            <td>Doações individuais</td>
+                            <td>Doação</td>
+                            <td>Campanha “Primavera Solidária”</td>
+                            <td>7.500,00</td>
+                        </tr>
+            
+                        <tr>
+                            <td><time datetime="2025-10-08">08/10</time></td>
+                            <td>Empresa X</td>
+                            <td>Patrocínio</td>
+                            <td>Cota bronze — Projeto Educação</td>
+                            <td>12.000,00</td>
+                        </tr>
+            
+                        <tr>
+                            <td><time datetime="2025-10-12">12/10</time></td>
+                            <td>Taxa de marketplace</td>
+                            <td>Serviços</td>
+                            <td>Intermediação de doação de produtos</td>
+                            <td>1.180,30</td>
+                        </tr>
+                    </tbody>
+          
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="4">Total do período</th>
+                            <td>20.680,30</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section id="despesas" aria-labelledby="titulo-despesas">
+                <h2 id="titulo_despesas">Despesas</h2>
+                <h3>Outubro/2025</h3>
+
+                <table>
+                    <caption>Aplicação dos recursos no período</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Data</th>
+                            <th scope="col">Centro de Custo</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Valor (R$)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><time datetime="06/10/2025">06/10</time></td>
+                            <td>Projeto Educação</td>
+                            <td>Materiais</td>
+                            <td>Kits de informática — turma 2</td>
+                            <td>8.900,00</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><time datetime="09/10/2025">09/10</time></td>
+                            <td>Operacional</td>
+                            <td>Serviços</td>
+                            <td>Hospedagem e domínio (mensal)</td>
+                            <td>289,00</td>
+                        </tr>
+
+                        <tr>
+                            <td><time datetime="11/10/2025">11/10</time></td>
+                            <td>Comunicação</td>
+                            <td>Campanha</td>
+                            <td>Anúncios — Primavera Solidária</td>
+                            <td>2.100,00</td>
+                        </tr>
+            
+                        <tr>
+                            <td><time datetime="13/10/2025">13/10</time></td>
+                            <td>Taxas</td>
+                            <td>Financeiras</td>
+                            <td>Tarifas de processamento</td>
+                            <td>635,72</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th scope="row" colspan="4">Total do período</th>
+                            <td>11.924,72</td>
+                        </tr>
+            
+                        <tr>
+                            <th scope="row" colspan="4">Saldo do período (Receitas − Despesas)</th>
+                            <td>8.755,58</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <p><small>Observação: notas fiscais e comprovantes estão disponíveis na <a href="#documentos">Central de documentos</a>.</small></p>
+            </section>
+
+            <section id="indicadores" aria-labelledby="titulo_indicadores">
+                <h2 id="titulo_indicadores">Projetos & Indicadores</h2>
+                <p>Metas e resultados do período; substitua pelos seus projetos reais.</p>
+        
+                <table>
+                    <caption>Indicadores-chave</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Projeto</th>
+                            <th scope="col">Meta do mês</th>
+                            <th scope="col">Alcançado</th>
+                            <th scope="col">% Conclusão</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        <tr>
+                            <td>Educação & Capacitação</td>
+                            <td>40 alunos certificados</td>
+                            <td>32</td>
+                            <td>80%</td>
+                            <td>Em andamento</td>
+                        </tr>
+
+                        <tr>
+                            <td>Proteção Animal</td>
+                            <td>30 adoções responsáveis</td>
+                            <td>27</td>
+                            <td>90%</td>
+                            <td>No prazo</td>
+                        </tr>
+                        <tr>
+                            <td>Cestas Solidárias</td>
+                            <td>200 famílias atendidas</td>
+                            <td>184</td>
+                            <td>92%</td>
+                            <td>No prazo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+      
+            <section id="documentos" aria-labelledby="titulo-documentos">
+                <h2 id="titulo-documentos">Central de documentos</h2>
+                <p>Baixe todos os documentos oficiais relacionados à transparência.</p>
+                
+                <ul>
+                    <li>Relatório financeiro (Mês/2025) — <a href="docs/relatorio-financeiro-2025-10.pdf" target="_blank" rel="noopener">PDF</a> · <a href="docs/relatorio-financeiro-2025-10.csv" target="_blank" rel="noopener">CSV</a></li>
+                    <li>Notas fiscais e comprovantes — <a href="docs/notas-2025-10.zip" target="_blank" rel="noopener">ZIP</a></li>
+                    <li>Estatuto/Regulamento — <a href="docs/estatuto.pdf" target="_blank" rel="noopener">PDF</a></li>
+                    <li>Política de Privacidade (LGPD) — <a href="docs/politica-privacidade.pdf" target="_blank" rel="noopener">PDF</a></li>
+                    <li>Relatório de Impacto (Anual) — <a href="docs/relatorio-impacto-2025.pdf" target="_blank" rel="noopener">PDF</a></li>
+                </ul>
+            </section>
+
+      
+            <section id="auditoria" aria-labelledby="titulo-auditoria">
+                <h2 id="titulo-auditoria">Auditoria & Conformidade</h2>
+                <p>Informações sobre controles internos e verificações externas.</p>
+                <ul>
+                    <li>Conciliação bancária mensal: <strong>concluída</strong> (responsável: Tesouraria).</li>
+                    <li>Auditoria externa independente: <strong>agendada</strong> para <time datetime="2025-11-20">20/11/2025</time>.</li>
+                    <li>Política anticorrupção e conflito de interesses publicada na <a href="#documentos">Central de documentos</a>.</li>
+                </ul>
+                <details>
+                    <summary>Ver matriz de riscos e controles</summary>
+                    <p>Risco de fraude em doações online — Controle: dupla validação de repasse, logs e trilhas de auditoria.</p>
+                    <p>Risco de atraso de prestação de contas — Controle: calendário com responsáveis e prazos definidos.</p>
+                </details>
+            </section>
+
+            
+            <section id="prestacao" aria-labelledby="titulo-prestacao">
+                <h2 id="titulo-prestacao">Prestação de contas</h2>
+                <h3>Outubro/2025</h3>
+                <p>Resumo narrativo do que foi feito com os recursos, desafios e próximos passos.</p>
+                <article>
+                    <h3>Resumo executivo</h3>
+                    <p>No período, priorizamos a aquisição de materiais para educação e ações de adoção responsável, mantendo custos operacionais enxutos. A campanha “Primavera Solidária” respondeu por 36% das receitas.</p>
+                    <p>O saldo positivo será alocado para ampliar vagas no curso de informática e manutenção do abrigo parceiro.</p>
+                </article>
+            </section>
+
+        
+            <section id="faq" aria-labelledby="titulo-faq">
+                <h2 id="titulo-faq">Perguntas frequentes</h2>
+
+                <details>
+                    <summary>Com que frequência vocês atualizam esta página?</summary>
+                    <p>Mensalmente, até o 5º dia útil. Caso haja ajustes, o <a href="#changelog">Histórico de mudanças</a> registra tudo.</p>
+                </details>
+                <br>
+                <details>
+                    <summary>Posso baixar os dados em formato aberto?</summary>
+                    <p>Sim. Utilize os arquivos CSV na <a href="#documentos">Central de documentos</a>.</p>
+                </details>
+                <br>
+                <details>
+                    <summary>Como sei que minha doação foi aplicada?</summary>
+                    <p>Cada despesa tem centro de custo e descrição. Você pode conferir os comprovantes e relatórios neste espaço.</p>
+                </details>
+            </section>
+
+            <section id="denuncias" aria-labelledby="titulo-denuncias">
+                <h2 id="titulo-denuncias">Canal de denúncias</h2>
+                <p>Use este canal para relatar suspeitas de fraude, assédio ou descumprimento de políticas.</p>
+                <ul>
+                    <li>E-mail dedicado: <a href="mailto:denuncias@juntossomosmaisfortes.org">denuncias@juntossomosmaisfortes.org</a></li>
+                    <li>Formulário anônimo: <a href="denuncias.html">denuncias.html</a></li>
+                    <li>Prazo de resposta: até 10 dias úteis.</li>
+                </ul>
+                <p><small>As denúncias são tratadas com confidencialidade, conforme a LGPD.</small></p>
+            </section>
+
+      
+            <section id="changelog" aria-labelledby="titulo-changelog">
+                <h2 id="titulo-changelog">Histórico de mudanças</h2>
+                <ol>
+                    <li><time datetime="16/10/2025">16/10/2025</time> — Primeira publicação da página de transparência.</li>
+                    <li><time datetime="16/10/2025">16/10/2025</time> — Inclusão de exemplos de receitas/despesas e indicadores.</li>
+                </ol>
+            </section>
+        </main>
+
+        <footer>
+      
+        <!-- Identidade e frase de impacto -->
+            <section>
+                <h2>JuntosSomos+Fortes</h2>
+                <p>Unindo pessoas, ONGs e apoiadores para transformar empatia em ação.</p>
+                <p>Cada gesto conta — e o seu faz a diferença.</p>
+            </section>
+
+            <!-- Navegação adicional do rodapé (organizada por blocos de links) -->
+            <section>
+                <nav aria-label="Navegação do rodapé">
+          
+                    <!-- Bloco de ações diretas -->
+                    <article>
+                        <h3>Ações</h3>
+                        <ul>
+                            <li><a href="cadastro.html">Participe</a></li>
+                            <li><a href="voluntariado.html">Voluntariado</a></li>
+                            <li><a href="doacoes.html">Doações</a></li>
+                            <li><a href="cadastro.html">Cadastre sua ONG</a></li>
+                        </ul>
+                    </article>
+          
+                    <!-- Bloco institucional -->
+                    <article>
+                        <h3>Institucional</h3>
+                        <ul>
+                            <li><a href="sobre.html" >Sobre nós</a></li>
+                            <li><a href="projetos.html">Projetos</a></li>
+                            <li><a href="transparencia.html" aria-current="page">Transparência</a></li>
+                            <li><a href="blog.html">Blog e Notícias</a></li>
+                            <li><a href="index.html#mvv">Missão, Visão e Valores</a></li>
+                            <li><a href="index.html#historico">Histórico e Conquistas</a></li>
+                            <li><a href="index.html#equipe">Equipe</a></li>
+                            <li><a href="index.html#equipe">Estrutura Organizacional</a></li>
+                            <li><a href="index.html#relatorios">Relatórios</a></li>
+                        </ul>
+                    </article>
+          
+                    <!-- Bloco de suporte -->
+                    <article>
+                        <h3>Suporte e Contato</h3>
+                        <ul>
+                            <li><a href="contato.html">Fale conosco</a></li>
+                        </ul>
+                    </article>
+
+                </nav>
+            </section>
+
+            <!-- Seção de informações de contato -->
+            <section>
+                <h3>Contato:</h3>
+                <address>
+                    <!-- Link de e-mail abre o cliente de correio padrão -->
+                    <p><a href="mailto:contato@juntossomosmaisfortes.org">contato@juntossomosmaisfortes.org</a></p>
+                    <!-- Link telefônico pode abrir discador em dispositivos móveis -->
+                    <p><a href="tel:+5561912345678">(61) 9 1234-5678</a></p>
+                    <p>Brasília — DF</p>
+                </address>
+            </section>
+
+            <!-- Direitos autorais e créditos -->
+            <section>
+                <p>© 2025 JuntosSomos+Fortes — Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://www.linkedin.com/in/lucas-gabriel-de-souza-silva-5967b6378/" target="_blank" rel="noopener">Lucas Gabriel</a></p>
+            </section>
+        </footer>
 
     </body>
 </html>
