@@ -3,106 +3,148 @@ html, body { margin: 0; font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-ser
 a { text-decoration: none; }
 
 /*Cabeça*/
-#parte_superior
-{
-    background-color: #111;
-    color: #ffffff;
-}
+* { box-sizing: border-box; }
+    html, body { margin: 0; font-family: system-ui, Arial, sans-serif; }
+    a { text-decoration: none; }
 
-#navegacao_principal
-{
-    display: grid;
-    grid-template-columns: 1fr auto;  /* logo | botão */
-    align-items: center;
-    gap: 8px 12px;
-    padding: 12px 12px;
-    border-bottom: 1px solid #da0d0d;
-    font-size: 14px;
-}
-
-/* Logo */
-#navegacao_principal .logo
-{
-    font-weight: 700;
-    color: #ffffff;
-}
-
-/* Toggle + ícone */
-#navegacao_principal .toggle
-{ 
-    display: none; 
-}
-
-#navegacao_principal .hamburger {
-    font-size: 1.5rem;
-    line-height: 1;
-    padding: 6px 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    user-select: none;
-}
-
-#navegacao_principal .hamburger:hover,
-#navegacao_principal .hamburger:focus-visible {
-    background: #3b3535;
-    outline: none;
-}
-
-/* Menu fechado por padrão no mobile */
-#navegacao_principal #menu 
-{
-    list-style: none;
-    margin: 0;
-    padding: 8px 0 0;
-    display: none;
-    grid-column: 1 / -1; /* ocupa largura total abaixo da linha da logo */
-}
-
-/* Abre quando o checkbox está marcado */
-#toggle-menu:checked ~ #menu
-{
-    display: grid;
-    gap: 6px;
-}
-
-/* Itens/links */
-#navegacao_principal #menu a
- {
-    display: block;
-    padding: 10px 12px;
-    border-radius: 8px;
-    color: #ffffff;
-    font-weight: 600;
-}
-
-#navegacao_principal #menu a:hover,
-#navegacao_principal #menu a:focus-visible 
-{
-    background: #201468;
-    outline: none;
-}
-
-/* --- Desktop (>= 768px): vira barra horizontal e esconde hamburguer --- */
-@media (min-width: 900px) 
-{
-    #navegacao_principal
-    {
-        grid-template-columns: auto 1fr;    /* logo | menu */
+    /* ===== NAV BAR ===== */
+    #navegacao_principal {
+      position: relative;          /* âncora para o dropdown absoluto */
+      display: grid;
+      grid-template-columns: 1fr auto; /* logo | botão */
+      align-items: center;
+      gap: 8px 12px;
+      padding: 12px 16px;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+      overflow: visible;           /* garante que nada seja cortado */
+      z-index: 9999;               /* acima do conteúdo da página */
     }
-    #navegacao_principal .hamburger { display: none; }
-    #navegacao_principal #menu 
-    {
-        display: flex !important;           /* força mostrar */
-        justify-content: flex-end;
+
+    /* Logo */
+    #navegacao_principal .logo {
+      font-weight: 700;
+      color: #111;
+    }
+
+    /* Toggle (checkbox + label “hambúrguer”) */
+    #navegacao_principal .toggle { display: none; }
+    #navegacao_principal .hamburger {
+      font-size: 1.6rem;
+      line-height: 1;
+      padding: 6px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+    #navegacao_principal .hamburger:hover,
+    #navegacao_principal .hamburger:focus-visible {
+      background: #f2f2f2;
+      outline: none;
+    }
+
+    /* ===== MENU (ID) ===== */
+    #menu {
+      /* fechado por padrão (mobile) */
+      display: none;
+
+      list-style: none;
+      margin: 0;
+      padding: 8px 0;
+
+      /* Dropdown absoluto sob o nav */
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+
+      background: #fff;
+      box-shadow: 0 10px 20px rgba(0,0,0,.08);
+      border-bottom: 1px solid #eee;
+      z-index: 10000;
+
+      /* --- evita corte em telas pequenas --- */
+      --nav-h: 56px; /* altura aproximada do nav; ajuste se preciso */
+      max-height: calc(100vh - var(--nav-h));
+      overflow-y: auto;
+    }
+
+    /* Abre o menu quando o checkbox está marcado (checkbox hack) */
+    #toggle-menu:checked ~ #menu {
+      display: grid;
+      gap: 6px;
+    }
+
+    /* Itens principais do menu */
+    #menu > li { position: relative; }
+    #menu > li > a {
+      display: block;
+      padding: 12px 16px;
+      font-weight: 600;
+      color: #0077cc;
+      border-radius: 8px;
+    }
+    #menu > li > a:hover,
+    #menu > li > a:focus-visible {
+      background: #e8f2fb;
+      outline: none;
+    }
+
+    /* ===== SUBMENU (oculto) ===== */
+    #navegacao_principal .submenu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 180px;
+
+      background: #fff;
+      border: 1px solid #ddd;
+      display: none;
+      z-index: 10001; /* acima do #menu */
+    }
+
+    #navegacao_principal .submenu li a {
+      display: block;
+      padding: 10px 14px;
+      color: #0077cc;
+      background: #fff;
+      border-radius: 0;
+    }
+    #navegacao_principal .submenu li a:hover,
+    #navegacao_principal .submenu li a:focus-visible {
+      background: #e8f2fb;
+      outline: none;
+    }
+
+    /* Mostra o submenu quando o mouse está sobre o pai (desktop) */
+    #menu > li:hover > .submenu {
+      display: block;
+    }
+
+    /* ===== DESKTOP ===== */
+    @media (min-width: 1250px) {
+      #navegacao_principal {
+        grid-template-columns: auto 1fr; /* logo | menu */
+      }
+      #navegacao_principal .hamburger { display: none; }
+
+      #menu {
+        position: static;              /* volta ao fluxo normal */
+        display: flex !important;      /* mostra sempre no desktop */
+        align-items: center;
         gap: 16px;
         padding: 0;
+        box-shadow: none;
+        border-bottom: 0;
+        max-height: none;
+        overflow: visible;
+      }
     }
 
-    #navegacao_principal .menu a 
-    {
-        padding: 8px 10px;
-    }
-}
 
 /*Rodapé*/
 
