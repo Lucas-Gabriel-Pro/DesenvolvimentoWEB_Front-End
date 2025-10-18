@@ -3,16 +3,28 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Conectamos ONGs, voluntários e doadores para transformar boas intenções em ações reais. Participe, doe ou cadastre sua ONG.">
+      <link rel="stylesheet" href="../Folha_de_estilo/estilo.css">
       <title>Doações - JuntosSomos+Fortes</title>
   </head>
   <body>
-    <a href="#conteudo">Ir para o conteúdo principal</a>
+    
+    <header id="parte_superior">
 
-    <header>
-        <div class="titulodapagina">JuntosSomos+Fortes</div>
-        <nav aria-label="Navegação principal">
-          <ul>
-          <li><a href="index.html">Página Inicial</a></li>
+      <!--
+        NAV: Menu de navegação principal do site.
+        aria-label ajuda leitores de tela a identificar a função da navegação.
+        aria-current="page" marca a página atual como ativa.
+      -->
+      <nav id="navegacao_principal" aria-label="Navegação principal">
+        <a class="logo" href="index.html"><img src="../imagens/logo2.png" width="100px"></a>
+
+        <!-- botão hamburguer -->
+        <input type="checkbox" id="toggle-menu" class="toggle" aria-label="Abrir menu">
+        <label for="toggle-menu" class="hamburger" aria-hidden="true">☰</label>
+
+        <!-- o menu agora é um ID -->
+        <ul id="menu">
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="projetos.html">Projetos</a></li>
           <li><a href="voluntariado.html">Voluntariado</a></li>
@@ -20,7 +32,8 @@
           <li><a href="transparencia.html">Transparência</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="login.html">entre</a> ou <a href="cadastro.html">Cadastre-se</a></li>
+          <li><a href="login.html">Entre</a></li>
+          <li><a href="cadastro.html">Incrição</a></li>
         </ul>
       </nav>
     </header>
@@ -182,7 +195,7 @@
 
     </main>
 
-    <footer>
+    <footer id="rodape">
       
       <!-- Identidade e frase de impacto -->
       <section>

@@ -1,6 +1,11 @@
 * { box-sizing: border-box; }
-html, body { margin: 0; font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif; }
-a { text-decoration: none; }
+html, body 
+{ margin: 0;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 32px;
+}
+a 
+{ text-decoration: none; }
 
 /*Cabeça*/
 * { box-sizing: border-box; }
@@ -24,6 +29,7 @@ a { text-decoration: none; }
       left: 0;
       right: 0;
       z-index: 9999;
+      height: 64px;
     }
 
     /* Logo */
