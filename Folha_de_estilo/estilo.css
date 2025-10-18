@@ -19,6 +19,11 @@ a { text-decoration: none; }
       background: #fff;
       overflow: visible;           /* garante que nada seja cortado */
       z-index: 9999;               /* acima do conteúdo da página */
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
     }
 
     /* Logo */

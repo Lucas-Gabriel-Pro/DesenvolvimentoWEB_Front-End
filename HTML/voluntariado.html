@@ -4,20 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Conectamos ONGs, voluntários e doadores para transformar boas intenções em ações reais. Participe, doe ou cadastre sua ONG.">
+        <link rel="stylesheet" href="../Folha_de_estilo/estilo.css">
         <title>Voluntariado - JuntosSomos+Fortes</title>
     </head>
     <body>
 
-        <!-- Link de acessibilidade: permite pular o menu e ir direto ao conteúdo principal -->
-        <a href="#conteudo">Ir para o conteúdo principal</a>
+    
+        <!--
+        HEADER: Cabeçalho do site.
+        Contém o nome da marca e a navegação principal entre as páginas.
+        -->
+        <header id="parte_superior">
 
-        <header>
-            <!-- Nome do portal (poderia ser linkado para a home, se desejado) -->
-            <div class="titulodapagina"><strong>JuntosSomos+Fortes</strong></div>
+            <!--
+            NAV: Menu de navegação principal do site.
+            aria-label ajuda leitores de tela a identificar a função da navegação.
+            aria-current="page" marca a página atual como ativa.
+            -->
+            <nav id="navegacao_principal" aria-label="Navegação principal">
+            <a class="logo" href="index.html"><img src="../imagens/logo2.png" width="100px"></a>
 
-            <!-- Menu de navegação principal do site -->
-            <nav>
-                <ul>
+            <!-- botão hamburguer -->
+            <input type="checkbox" id="toggle-menu" class="toggle" aria-label="Abrir menu">
+            <label for="toggle-menu" class="hamburger" aria-hidden="true">☰</label>
+
+             <!-- o menu agora é um ID -->
+                <ul id="menu">
                     <li><a href="index.html">Página Inicial</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
