@@ -8,6 +8,7 @@ a
 { text-decoration: none; }
 
 /*Cabeça*/
+
 * { box-sizing: border-box; }
     html, body { margin: 0; font-family: system-ui, Arial, sans-serif; }
     a { text-decoration: none; }
@@ -159,11 +160,96 @@ a
 
 /*Rodapé*/
 
-#rodape
-{
-    background-color: black;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* === RODAPÉ RESPONSIVO === */
+#rodape {
+  background: #111;
+  color: #eee;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+}
+
+/* Texto geral e links */
+#rodape h2, #rodape h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#rodape a {
+  color: #ffcc66;
+  text-decoration: none;
+}
+
+#rodape a:hover {
+  text-decoration: underline;
+}
+
+/* === MENU DO RODAPÉ (links organizados) === */
+#menu_rodape nav {
+  display: grid;
+  gap: 20px;
+}
+
+/* Cada bloco (Ações, Institucional, Suporte) */
+#menu_rodape article ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menu_rodape article li {
+  margin: 6px 0;
+}
+
+/* === GRID RESPONSIVO === */
+@media (min-width: 768px) {
+  #rodape {
+    text-align: left;
+  }
+
+  #menu_rodape nav {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: start;
+  }
+
+  /* Alinhar as seções do rodapé lado a lado */
+  #rodape {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      "identidade menu contato"
+      "creditos creditos creditos";
+  }
+
+  /* Atribui cada bloco à sua área */
+  #rodape section:nth-of-type(1) { grid-area: identidade; }
+  #rodape section:nth-of-type(2) { grid-area: menu; }
+  #rodape section:nth-of-type(3) { grid-area: contato; }
+  #rodape section:nth-of-type(4) { grid-area: creditos; }
+
+  #rodape section:nth-of-type(4) {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 10px;
+  }
+}
+
+/* === TAMANHOS PEQUENOS (celulares) === */
+@media (max-width: 767px) {
+  #menu_rodape nav {
+    grid-template-columns: 1fr;
+  }
+
+  #rodape section {
+    margin-bottom: 20px;
+  }
+
+  #rodape p, #rodape li {
+    font-size: 0.95rem;
+  }
 }
 
 /*
