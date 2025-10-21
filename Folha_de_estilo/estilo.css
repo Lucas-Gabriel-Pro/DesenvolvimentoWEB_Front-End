@@ -226,10 +226,9 @@ a
   /* Atribui cada bloco à sua área */
   #rodape section:nth-of-type(1) { grid-area: identidade; }
   #rodape section:nth-of-type(2) { grid-area: menu; }
-  #rodape section:nth-of-type(3) { grid-area: contato; }
-  #rodape section:nth-of-type(4) { grid-area: creditos; }
+  #rodape section:nth-of-type(3) { grid-area: creditos; }
 
-  #rodape section:nth-of-type(4) {
+  #rodape section:nth-of-type(3) {
     text-align: center;
     border-top: 1px solid #333;
     padding-top: 20px;
