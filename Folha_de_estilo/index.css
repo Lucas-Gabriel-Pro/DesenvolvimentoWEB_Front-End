@@ -28,7 +28,7 @@ h1
 @media (max-width: 440px) {
   banner_slider {  position: relative;
                     width: 100%;
-                    max-width: 300px;
+                    max-width: 440px;
                     margin: auto;
                     overflow: hidden;
                     padding: 0%;}
@@ -52,7 +52,7 @@ h1
 {
     .slides{
         display: flex;
-        width: 300px;
+        width: 440px;
         animation: slide 30s infinite; 
     }
 }
