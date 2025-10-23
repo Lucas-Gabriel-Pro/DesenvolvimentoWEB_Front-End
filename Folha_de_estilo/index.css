@@ -79,13 +79,13 @@ h1
 #texto_slide
 {
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 0%;
     transform: translate(0% 0%);
-    color: rgb(255, 255, 255);
+    color: rgb(255, 235, 235);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.35);
-    padding: 10px;
+    background-color: rgba(102, 26, 26, 0.253);
+    padding: 5px 0px 30px;
 }
 
 #texto_slide .titulo_slide
@@ -98,7 +98,7 @@ h1
     {
        #texto_slide .titulo_slide
 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 5px
 } 
     }
@@ -115,7 +115,7 @@ h1
     {
        #texto_slide .frase_slide
 {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     margin-bottom: 5px
 } 
     }
