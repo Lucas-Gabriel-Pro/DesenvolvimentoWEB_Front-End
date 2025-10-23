@@ -241,7 +241,7 @@
 
 
 .depoimentos article{
-    width: 500px;
+    width: 700px;
     background-color: #933ccc;
     margin: 1rem;
     padding: 2rem;
@@ -252,6 +252,16 @@
     margin-bottom: 20px;
     
 }
+
+@media (max-width: 699px;){
+    .depoimentos article{
+        width: 90%;
+        position: relative;
+    }
+}
+
+
+
 .depoimentos article img{
     border-radius: 12px;
 }
