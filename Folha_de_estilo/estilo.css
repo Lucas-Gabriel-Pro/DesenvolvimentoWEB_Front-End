@@ -17,6 +17,14 @@ main {
   padding-bottom: 1px;
 }
 
+@media(max-width: 440px){
+  main{
+    width: 440px;
+    background-color: #ffffff;
+    margin: 0px;
+  }
+}
+
 /*Cabeça*/
 
 * { box-sizing: border-box; }
