@@ -15,7 +15,7 @@
 @media (max-width: 768px) {
   .banner_slider {  position: relative;
                     width: 100%;
-                    max-width: 500px;
+                    max-width: 450px;
                     margin: auto;
                     overflow: hidden;
                     border-radius: 3px;
@@ -36,7 +36,7 @@
 {
     .slides{
         display: flex;
-        width: 500px;
+        width: 450px;
         animation: slide 30s infinite; 
     }
 }
