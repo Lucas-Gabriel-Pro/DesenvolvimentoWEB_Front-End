@@ -1,10 +1,4 @@
 
-/*Título principal*/
-h1
-{
-    padding-left: 10px;
-}
-
 /*banner slider*/
 
 .banner_slider {
@@ -140,4 +134,141 @@ h1
     color: #640707;
 }
 
+/*Projetos*/
 
+/*
+.sobre{
+    background-color: #ffffff;
+    padding: 2%;
+}
+*/
+
+
+}
+
+.projetos{
+    background-color: #ffe7e7;
+    padding: 2%;
+}
+
+.projetos > h2{
+    color: #962525;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.projetos > p{
+    color: #580404;
+}
+
+
+
+#projetos{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+@media (max-width: 768px) {
+    #projetos {
+        flex-direction: column
+    }
+}
+
+.bloco_projeto h3{
+    color: #dec6ff;
+}
+
+
+.bloco_projeto a:visited 
+{
+    color: #ba86ff;
+    font-weight: bold;
+}
+
+.bloco_projeto a:link 
+{
+    color: #ba86ff;
+    font-weight: bold;
+}
+
+.bloco_projeto {
+    flex: 1;                  
+    padding: 2%;
+    border-radius: 5px;
+    
+}
+
+#quatro_patas{
+    background-color: #4b476e;
+    color: #ffffff;
+
+}
+
+#quatro_patas> h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+
+}
+
+#aprender_crescer> h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+
+}
+
+
+#rede_solidaria> h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+
+}
+
+
+#aprender_crescer{
+    background-color: #4e4685;
+    color: #ffffff;
+
+}
+
+#rede_solidaria{
+    background-color: #3d318d;
+    color: #ffffff;
+}
+
+  
+
+
+
+.depoimentos article{
+    width: 500px;
+    background-color: #933ccc;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 6px;
+    color: white;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+.depoimentos article img{
+    border-radius: 12px;
+}
+
+/*
+.destaques{
+    background-color: #7ad2ff;
+    padding: 2%;
+}
+
+.transparencia{
+    background-color: #ffffff;
+    padding: 2%;
+}
+
+.institucional{
+    background-color: #7ad2ff;
+    padding: 2%;
+}
+*/

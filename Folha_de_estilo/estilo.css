@@ -186,6 +186,29 @@ main {
       }
     }
 
+main h1{
+  padding: 2%;
+}
+
+main h2{
+  padding: 0px 2% 0px 2%;
+}
+
+main h3{
+  padding: 0px 2% 0px 2%;
+}
+
+main h4{
+  padding: 0px 2% 0px 2%;
+}
+
+main table{
+  padding: 0px 2% 0px 2%;
+}
+
+main p{
+  padding: 0px 2% 0px 2%;
+}
 
 /*Rodapé*/
 
@@ -199,6 +222,14 @@ main {
   flex-direction: column;
   gap: 32px;
   text-align: center;
+}
+
+@media (max-width: 899px) {
+  #rodape {
+    width: 100%;
+    margin: auto;
+  }
+  
 }
 
 /* Texto geral e links */
