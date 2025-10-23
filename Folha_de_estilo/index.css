@@ -1,0 +1,61 @@
+/*banner slider*/
+
+
+
+.banner_slider {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+ 
+@media (max-width: 768px) {
+  .banner_slider {  position: relative;
+                    width: 100%;
+                    max-width: 500px;
+                    margin: auto;
+                    overflow: hidden;
+                    border-radius: 3px;
+                    border-bottom-left-radius: 3px; }
+}
+
+@media (max-width: 480px) {
+  .slider { --ratio: 1/1; }
+}
+
+.slides {
+    display: flex;
+    width: 900px;
+    animation: slide 30s infinite;
+}
+
+@media (max-width: 768px)
+{
+    .slides{
+        display: flex;
+        width: 500px;
+        animation: slide 30s infinite; 
+    }
+}
+
+
+.slides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%   { transform: translateX(0); }
+    11%  { transform: translateX(0); }
+    22%  { transform: translateX(-100%)}
+    33%  { transform: translateX(-200%); }
+    44%  { transform: translateX(-300%); }
+    55%  { transform: translateX(-400%); }
+    66%  { transform: translateX(-500%); }
+    77%  { transform: translateX(-600%); }
+    88%  { transform: translateX(-700%); }
+}
