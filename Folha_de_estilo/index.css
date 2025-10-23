@@ -90,32 +90,36 @@ h1
 
 #texto_slide .titulo_slide
 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 10px
 }
 
-@media (max-width: 440px)
+@media(max-width: 768px)
+    {
+       #texto_slide .titulo_slide
 {
-    #texto_slide .titulo_slide{
-        font-size: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 5px
+} 
     }
-}
-
 
 
 #texto_slide .frase_slide
 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
     
 }
 
-@media (max-width: 440px)
+@media(max-width: 768px)
+    {
+       #texto_slide .frase_slide
 {
-    #texto_slide .frase_slide{
-        font-size: 0.8rem;
+    font-size: 0.5rem;
+    margin-bottom: 5px
+} 
     }
-}
+
 
 #texto_slide a:link{
     color: #d44343;

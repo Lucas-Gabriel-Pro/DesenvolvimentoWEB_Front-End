@@ -17,6 +17,17 @@ main {
   padding-bottom: 1px;
 }
 
+@media (max-width: 899px) {
+  main {
+    width: 100%;
+    background-color: #ffffff;
+    margin: auto;
+    padding-bottom: 1px;
+  }
+  
+}
+
+
 @media(max-width: 440px){
   main{
     width: 440px;
