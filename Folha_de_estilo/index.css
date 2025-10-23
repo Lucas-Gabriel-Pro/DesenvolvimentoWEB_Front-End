@@ -25,10 +25,14 @@ h1
                     padding: 0%;}
 }
 
-@media (max-width: 480px) {
-  .slider { --ratio: 1/1; }
+@media (max-width: 440px) {
+  banner_slider {  position: relative;
+                    width: 100%;
+                    max-width: 300px;
+                    margin: auto;
+                    overflow: hidden;
+                    padding: 0%;}
 }
-
 .slides {
     display: flex;
     width: 900px;
@@ -40,6 +44,15 @@ h1
     .slides{
         display: flex;
         width: 450px;
+        animation: slide 30s infinite; 
+    }
+}
+
+@media (max-width: 440px)
+{
+    .slides{
+        display: flex;
+        width: 300px;
         animation: slide 30s infinite; 
     }
 }
@@ -81,11 +94,27 @@ h1
     margin-bottom: 10px
 }
 
+@media (max-width: 440px)
+{
+    #texto_slide .titulo_slide{
+        font-size: 0.8rem;
+    }
+}
+
+
+
 #texto_slide .frase_slide
 {
     font-size: 1.3rem;
     margin-bottom: 10px;
     
+}
+
+@media (max-width: 440px)
+{
+    #texto_slide .frase_slide{
+        font-size: 0.8rem;
+    }
 }
 
 #texto_slide a:link{
