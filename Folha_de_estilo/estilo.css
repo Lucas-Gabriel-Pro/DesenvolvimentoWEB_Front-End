@@ -2,10 +2,21 @@
 html, body 
 { margin: 0;
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 32px;
+  padding-top: 22px;
+  background-image: url(../imagens/background.png);
 }
 a 
 { text-decoration: none; }
+
+
+main {
+  width: 900px;
+  background-color: #ffffff;
+  margin: auto;
+  box-shadow: 0px 0px 40px #000000 ;
+  
+
+}
 
 /*Cabeça*/
 

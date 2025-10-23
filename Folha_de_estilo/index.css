@@ -1,6 +1,11 @@
+
+/*Título principal*/
+h1
+{
+    padding-left: 10px;
+}
+
 /*banner slider*/
-
-
 
 .banner_slider {
     position: relative;
@@ -8,8 +13,7 @@
     max-width: 900px;
     margin: auto;
     overflow: hidden;
-    border-radius: 12px;
-    border-bottom-left-radius: 12px;
+    padding: 0px;
 }
  
 @media (max-width: 768px) {
@@ -18,8 +22,7 @@
                     max-width: 450px;
                     margin: auto;
                     overflow: hidden;
-                    border-radius: 3px;
-                    border-bottom-left-radius: 3px; }
+                    padding: 0%;}
 }
 
 @media (max-width: 480px) {
@@ -59,3 +62,49 @@
     77%  { transform: translateX(-600%); }
     88%  { transform: translateX(-700%); }
 }
+
+#texto_slide
+{
+    position: absolute;
+    top: 65%;
+    left: 0%;
+    transform: translate(0% 0%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 10px;
+}
+
+#texto_slide .titulo_slide
+{
+    font-size: 2rem;
+    margin-bottom: 10px
+}
+
+#texto_slide .frase_slide
+{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    
+}
+
+#texto_slide a:link{
+    color: #d44343;
+    background-color: #ffacac;
+    border-radius: 4px;
+    padding: 6px 30px;
+}
+
+#texto_slide a:visited{
+    color: #d44343;
+}
+
+#texto_slide a:hover{
+    color: #b23131;
+}
+
+#texto_slide a:active{
+    color: #640707;
+}
+
+
