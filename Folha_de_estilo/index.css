@@ -85,7 +85,8 @@
 #texto_slide .titulo_slide
 {
     font-size: 1.8rem;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    color:  white;
 }
 
 @media(max-width: 768px)
@@ -136,12 +137,15 @@
 
 /*Projetos*/
 
-/*
+
 .sobre{
     background-color: #ffffff;
     padding: 2%;
+
 }
-*/
+
+
+
 
 main a:link{
     color: #ba86ff;
@@ -160,18 +164,18 @@ main a:hover{
 
 
 .projetos{
-    background-color: #ffe7e7;
+    background-color: #efedff;
     padding: 2%;
 }
 
 .projetos > h2{
-    color: #962525;
+    color: rgb(85, 0, 196);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
 }
 
 .projetos > p{
-    color: #580404;
+    color: #000000;
 }
 
 
@@ -214,7 +218,7 @@ main a:hover{
 }
 
 #quatro_patas{
-    background-color: #4b476e;
+    background-color: #4e4685;
     color: #ffffff;
 
 }
@@ -225,12 +229,24 @@ main a:hover{
 
 }
 
-#aprender_crescer> h3{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+
+
+
+#aprender_crescer{
+    background-color: #4b476e;
+    color: #ffffff;
 
 }
 
+#aprender_crescer> h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+#rede_solidaria{
+    background-color: #3d318d;
+    color: #ffffff;
+}
 
 #rede_solidaria> h3{
     font-family: Arial, Helvetica, sans-serif;
@@ -239,24 +255,9 @@ main a:hover{
 }
 
 
-#aprender_crescer{
-    background-color: #4e4685;
-    color: #ffffff;
-
-}
-
-#rede_solidaria{
-    background-color: #3d318d;
-    color: #ffffff;
-}
-
-  
-
-
-
 .depoimentos article{
     width: 700px;
-    background-color: #933ccc;
+    background-color: #ba86ff;
     margin: 1rem;
     padding: 2rem;
     border-radius: 24px;
@@ -282,19 +283,27 @@ main a:hover{
     border-radius: 12px;
 }
 
-/*
-.destaques{
-    background-color: #7ad2ff;
-    padding: 2%;
-}
 
-.transparencia{
+.destaques{
     background-color: #ffffff;
     padding: 2%;
 }
 
-.institucional{
-    background-color: #7ad2ff;
+.transparencia{
+    background-color: #efedff;
     padding: 2%;
+
 }
-*/
+
+.transparencia h2{
+    color: rgb(85, 0, 196);
+}
+
+.transparencia h3{
+    color: rgb(132, 86, 190);
+}
+
+.institucional{
+    background-color: #ffffff;
+    padding: 4%;
+}

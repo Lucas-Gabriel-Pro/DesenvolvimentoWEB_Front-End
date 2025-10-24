@@ -190,25 +190,28 @@ main h1{
   padding: 2%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
-  color: #962525
+  color: #962525;
 }
 
 main h2{
   padding: 0px 2% 0px 2%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
+  color: rgb(85, 0, 196);
 }
 
 main h3{
   padding: 0px 2% 0px 2%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  color: rgb(132, 86, 190);
 }
 
 main h4{
   padding: 0px 2% 0px 2%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.0rem;
+  color: #962525;
 }
 
 main table{
@@ -223,7 +226,7 @@ main p{
 
 /* === RODAPÉ RESPONSIVO === */
 #rodape {
-  background: #111;
+  background: #5a0c0c;
   color: #eee;
   padding: 40px 20px;
   margin: 0px;
@@ -248,7 +251,7 @@ main p{
 }
 
 #rodape a {
-  color: #ffcc66;
+  color: #fffd7d;
   text-decoration: none;
 }
 
