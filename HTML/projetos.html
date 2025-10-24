@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Conectamos ONGs, voluntários e doadores para transformar boas intenções em ações reais. Participe, doe ou cadastre sua ONG.">
       <link rel="stylesheet" href="../Folha_de_estilo/estilo.css">
+      <link rel="stylesheet" href="../Folha_de_estilo/projetos.css">
       <title>Projetos - JuntosSomos+Fortes</title>
   </head>
 
@@ -45,20 +46,16 @@
     
     <main>
 
-      <h1>Nossos Projetos</h1>
-
-      <p>Cuidar, educar e alimentar são gestos simples — mas, quando realizados com propósito, transformam-se em força coletiva capaz de mudar vidas.</p>
-
-      <p>Cada projeto que integra a rede JuntosSomos+Fortes representa uma frente de ação social construída sobre três pilares: compaixão, compromisso e transparência. Juntos, eles formam um ecossistema de solidariedade que une pessoas, ONGs e comunidades em torno de um mesmo ideal: gerar impacto real, com responsabilidade e resultados visíveis.</p>
-
-      <p>Aqui, você conhecerá histórias que nasceram de necessidades urgentes, evoluíram com o apoio de voluntários e hoje transformam diariamente a realidade de centenas de pessoas e animais. Mais do que iniciativas isoladas, esses projetos são testemunhos vivos de que a empatia, quando organizada, torna-se poder de transformação.</p>
+      <section id="principal">
+        <h1>Nossos Projetos</h1>
+        <p>Cuidar, educar e alimentar são gestos simples — mas, quando realizados com propósito, transformam-se em força coletiva capaz de mudar vidas.</p>
+        <p>Cada projeto que integra a rede JuntosSomos+Fortes representa uma frente de ação social construída sobre três pilares: compaixão, compromisso e transparência. Juntos, eles formam um ecossistema de solidariedade que une pessoas, ONGs e comunidades em torno de um mesmo ideal: gerar impacto real, com responsabilidade e resultados visíveis.</p>
+        <p>Aqui, você conhecerá histórias que nasceram de necessidades urgentes, evoluíram com o apoio de voluntários e hoje transformam diariamente a realidade de centenas de pessoas e animais. Mais do que iniciativas isoladas, esses projetos são testemunhos vivos de que a empatia, quando organizada, torna-se poder de transformação.</p>
+      </section>
             
-      <nav aria-label="Você está aqui">
-        <p><a href="index.html">Início</a> › Projetos</p>
-      </nav>
 
-      <section aria-labelledby="indice">
-        <h2 id="indice">Índice de navegação</h2>
+      <section aria-labelledby="Índice" id="indice">
+        <h2>Índice de navegação</h2>
         <nav>
           <ul>
             <li><a href="#criterios">Critérios para cadastro de ONG</a></li>                  
@@ -70,7 +67,7 @@
         </nav>
       </section>
 
-      <section id="como_participar">
+      <section aria-labelledby="Como participar" id="como_participar">
         <h2>Como participar</h2>
         <ul>
           <li><a href="voluntariado.html">Ser voluntário</a></li>
@@ -79,8 +76,8 @@
         </ul>
       </section>
 
-      <section>
-        <h2 id="criterios">Critérios, segurança e parceria</h2>
+      <section aria-labelledby="Critérios" id="criterios">
+        <h2>Critérios, segurança e parceria</h2>
         <ul>
           <li>CNPJ ativo e responsável legal identificado.</li>
           <li>Descrição clara de público, metas e atividades.</li>
@@ -89,69 +86,68 @@
         </ul>
       </section>
 
-      <section>
-        <h2 id="impacto">Impacto geral da rede</h2>
-        <table border="1" cellpadding="12" cellspacing="0">
-          <thead>
-            <tr>
-              <th scope="col">Instituição</th>
-              <th scope="col">Indicador</th>
-              <th scope="col">Valor</th>
-              <th scope="col">Período</th>
-             </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td rowspan="2"><strong>Vida em Quatro Patas</strong></td>
-              <td>Animais resgatados e tratados</td>
-              <td>+200</td>
-              <td>Desde 2018</td>
-            </tr>
-            <tr>
-              <td>Doações responsáveis</td>
-              <td>+150</td>
-              <td>Desde 2018</td>
-            </tr>
-
-            <tr>
-              <td rowspan="3"><strong>Instituto Aprender e Crescer</strong></td>
-              <td>Crianças atendidas</td>
-              <td>+400</td>
-              <td>Desde 2016</td>
-            </tr>
-            <tr>
-              <td>Computadores doados</td>
-              <td>+50</td>
-              <td>Desde 2016</td>
-            </tr>
-
-            <tr>
-              <td>Acesso a cursos profissionalizantes</td>
-              <td>+100</td>
-              <td>Desde 2016</td>
-            </tr>
-
-            <tr>
-              <td rowspan="3"><strong>Rede Solidária do Bem</strong></td>
-              <td>Voluntários ativos</td>
-              <td>+120</td>
-              <td>Desde 2019</td>
-            </tr>
-            <tr>
-              <td>Famílias atendidas anualmente</td>
-              <td>+2 mil</td>
-              <td>Desde 2019</td>
-            </tr>
-            <tr>
-              <td>Refeições entregues</td>
-              <td>+150 mil</td>
-              <td>Desde 2019</td>
-            </tr>
-          </tbody>
-        </table>
+      <section aria-labelledby="Impacto" id="impacto">
+        <h2 >Impacto geral da rede</h2>
+        <div id="tabela_impacto">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Instituição</th>
+                <th scope="col">Indicador</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Período</th>
+               </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2" class="ultima_celula"><strong>Vida em Quatro Patas</strong></td>
+                <td>Animais resgatados e tratados</td>
+                <td>+200</td>
+                <td>Desde 2018</td>
+              </tr>
+              <tr >
+                <td class="ultima_celula">Doações responsáveis</td>
+                <td class="ultima_celula">+150</td>
+                <td class="ultima_celula">Desde 2018</td>
+              </tr>
+              <tr>
+                <td rowspan="3" class="ultima_celula"><strong>Instituto Aprender e Crescer</strong></td>
+                <td>Crianças atendidas</td>
+                <td>+400</td>
+                <td>Desde 2016</td>
+              </tr>
+              <tr>
+                <td>Computadores doados</td>
+                <td>+50</td>
+                <td>Desde 2016</td>
+              </tr>
+              <tr >
+                <td class="ultima_celula">Acesso a cursos profissionalizantes</td>
+                <td class="ultima_celula">+100</td>
+                <td class="ultima_celula">Desde 2016</td>
+              </tr>
+              <tr>
+                <td rowspan="3"><strong>Rede Solidária do Bem</strong></td>
+                <td>Voluntários ativos</td>
+                <td>+120</td>
+                <td>Desde 2019</td>
+              </tr>
+              <tr>
+                <td>Famílias atendidas anualmente</td>
+                <td>+2 mil</td>
+                <td>Desde 2019</td>
+              </tr>
+              <tr>
+                <td>Refeições entregues</td>
+                <td>+150 mil</td>
+                <td>Desde 2019</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
-      <section class="projetos">
+      <section aria-labelledby="Projetos" id="projetos">
         <article id="prj_quatro_patas">
           <h2 id="quatro_patas">Vida em Quatro Patas</h2>
 
@@ -170,7 +166,7 @@
           <p>O principal objetivo da Vida em Quatro Patas é reduzir o número de animais abandonados e vítimas de maus-tratos, oferecendo acolhimento digno e novas oportunidades de vida. Mais do que resgatar, a ONG busca mudar mentalidades, mostrando que cada adoção é uma escolha de amor e responsabilidade. Seu trabalho visa criar uma cultura de compaixão e posse responsável, inspirando uma cidade mais humana e amiga dos animais.</p>
 
           <section aria-labelledby="nec_quatro_patas">
-            <h3 id="nec_quatro_patas">Necessidades atuais</h3>
+            <h4 id="nec_quatro_patas">Necessidades atuais</h4>
             <ul>
               <li>Itens/materiais prioritários: ração para cães e gatos, produtos de limpeza e de higiene (banho e tosa).</li>
               <li>Voluntários: cuidadores para alimentar os pets, cuidar da higiene do espaço e veterinários para castração, vacinação e outros cuidados.</li>
@@ -187,17 +183,17 @@
             </ul>
           </section>
 
-          <aside>
-            <h3>Depoimento:</h3>
+          <h3>Depoimento:</h3>
+          <aside class="depoimento">
             <blockquote>
               <p><q>Encontrei a Mel em um abrigo da ONG, magrinha e assustada. Hoje ela é parte da família. Ver o amor que esses voluntários têm pelos animais é inspirador.</q></p>
               <p><em>— Carla Menezes, adotante</em></p>
             </blockquote>
+            <img src="../imagens/foto_mel.jpg" alt="" width="80%">
+            <p><a href="../HTML/doacoes.html">Apoiar projeto</a> <a href="../HTML/voluntariado.html">Quero ajudar</a></p>
           </aside>
 
-          <img src="" alt="">
-                        
-          <p><a href="">Apoiar projeto</a> <a href="">Quero ajudar</a></p>
+          
         </article>
 
         <article id="prj_aprender_crescer">
@@ -237,17 +233,18 @@
             </ul>
           </section>
 
-          <aside>
-            <h3>Depoimento:</h3>
+          <h3>Depoimento:</h3>
+          <aside class="depoimento">
+            
             <blockquote>
               <p><q>Meu filho nunca tinha tido acesso a um computador. Depois do curso de informática do Instituto, ele já fala em ser programador. Isso não tem preço.</q></p>
               <p><em>— Luciana Alves, mãe de aluno</em></p>
             </blockquote>
+            <img src="../imagens/filho_sonho.jpg" alt="" width="80%">            
+            <p><a href="../HTML/doacoes.html">Apoiar projeto</a> <a href="../HTML/voluntariado.html">Quero ajudar</a></p>
           </aside>
                         
-          <img src="" alt="">
-                        
-          <p><a href="">Apoiar projeto</a> <a href="">Quero ajudar</a></p>
+          
         </article>
 
         <article id="prj_rede_solidaria">
@@ -289,22 +286,23 @@
               <li><a href="transparencia.html">Ver prestação de contas</a>.</li>         
             </ul>
           </section>                        
-
-          <aside>              
-            <h3>Depoimento:</h3>
+          
+          <h3>Depoimento:</h3>
+          <aside class="depoimento">              
+            
             <blockquote>              
               <p><q>A comida é o primeiro passo, mas o verdadeiro propósito é devolver dignidade. Cada entrega é uma mensagem de que ninguém está sozinho.</q></p>
               <p><em>— Kellen Nogueira, coordenadora da Rede Solidária do Bem</em></p>
             </blockquote>
+            <img src="../imagens/doacao_de_comida.png" alt="" width="80%">
+            <p><a href="../HTML/doacoes.html">Apoiar projeto</a> <a href="../HTML/voluntariado.html">Quero ajudar</a></p>
           </aside>
 
-          <img src="" alt="">
-                        
-          <p><a href="">Apoiar projeto</a> <a href="">Quero ajudar</a></p>
+          
         </article>
       </section>
 
-      <section class="depoimentos">
+      <section aria-labelledby="Depoimentos" id="depoimentos">
         <h2>Depoimentos</h2>
 
         <article>
@@ -369,8 +367,8 @@
 
       </section>
 
-      <section aria-labelledby="perguntas_frequentes">
-        <h2 id="perguntas_frequentes">Perguntas frequentes</h2>
+      <section aria-labelledby="perguntas_frequentes" id="depoimentos">
+        <h2 >Perguntas frequentes</h2>
 
         <details>
           <summary>Como são usados os recursos doados (itens e dinheiro)?</summary>

@@ -1,0 +1,77 @@
+#tabela_impacto{
+    border: 1px solid #423783;
+    margin: auto;
+    width: 80%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #423783;
+    color: white;
+    border: 0px;
+    padding: 8px 8px;
+    font-size: 1rem;
+    border: 1px solid #423783 ;
+}
+
+td{
+   padding: 8px 8px;
+   font-size: 0.8rem;
+   border-left: 1px solid #423783;
+}
+
+table tr .ultima_celula{
+    border-bottom: 1px solid #423783;
+}
+
+/*Links*/
+
+ul {
+    list-style: none;
+    margin: 0%;
+    padding-left: 1rem;
+}
+
+a:link, a:visited{
+    color: #ba86ff;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #7742bb;
+}
+
+/*Sessões*/
+
+#principal, #indice, #como_participar, #impacto, #criterios, #projetos, #depoimentos, #depoimentos{
+    padding: 2%;
+}
+
+.depoimento{
+    margin: auto;
+    max-width: 70%;
+    background-color: rgb(162, 151, 255);
+    border-radius: 15px;
+    padding: 12px;
+    color: white;
+    text-align: center;
+}
+
+.depoimento a:link, a:hover{
+    margin: auto;
+    background-color: rgb(55, 34, 148);
+    padding: 5px;
+    color: #ff0000;
+    border-radius: 10px;
+}
+
+.depoimento img{
+    display: block;
+    margin: auto;
+    max-width: 70%;
+
+}

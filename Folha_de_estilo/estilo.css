@@ -190,21 +190,21 @@ main h1{
   padding: 2%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
-  color: #962525;
+  color: #3d008d;
 }
 
 main h2{
   padding: 0px 2% 0px 2%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  color: rgb(85, 0, 196);
+  color: #5500c4;
 }
 
 main h3{
   padding: 0px 2% 0px 2%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
-  color: rgb(132, 86, 190);
+  color: #8456be;
 }
 
 main h4{
@@ -212,10 +212,6 @@ main h4{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.0rem;
   color: #962525;
-}
-
-main table{
-  padding: 0px 2% 0px 2%;
 }
 
 main p{
@@ -226,7 +222,7 @@ main p{
 
 /* === RODAPÉ RESPONSIVO === */
 #rodape {
-  background: #5a0c0c;
+  background: #471616;
   color: #eee;
   padding: 40px 20px;
   margin: 0px;
@@ -245,13 +241,13 @@ main p{
 }
 
 /* Texto geral e links */
-#rodape h2, #rodape h3 {
-  color: #fff;
+#rodape h2, #rodape h3, #rodape li, #rodape p {
+  color: #ffb2b2;
   margin-bottom: 10px;
 }
 
 #rodape a {
-  color: #fffd7d;
+  color: #d46a6a ;
   text-decoration: none;
 }
 

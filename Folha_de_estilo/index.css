@@ -116,23 +116,22 @@
     }
 
 
-#texto_slide a:link{
-    color: #d44343;
-    background-color: #ffacac;
+#texto_slide .item_slide:link, .item_slide:visited{
+    color: #ffffff;
+    background-color: #8c78ff;
     border-radius: 4px;
     padding: 6px 30px;
 }
 
-#texto_slide a:visited{
-    color: #d44343;
+
+#texto_slide .item_slide:hover{
+    color: #ffffff;
+    background-color: #0f0066;
 }
 
-#texto_slide a:hover{
-    color: #b23131;
-}
-
-#texto_slide a:active{
-    color: #640707;
+#texto_slide .item_slide:active{
+    color: #ffffff;
+    background-color: #2000d8;
 }
 
 /*Projetos*/
@@ -147,18 +146,14 @@
 
 
 
-main a:link{
+main a:link, a:visited{
     color: #ba86ff;
+    font-weight: bold;
 }
 
-main a:visited{
-    color: #ba86ff;
-}
 
 main a:hover{
     color: #7742bb;
-    font-weight: bold;
-
 }
 
 
