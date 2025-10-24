@@ -2,12 +2,12 @@
 html, body 
 { margin: 0;
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
-  padding-top: 22px;
+  padding-top: 19px;
   background-image: url(../imagens/background.png);
 }
 
-a 
-{ text-decoration: none; }
+a { text-decoration: none; }
+
 
 
 main {
@@ -188,18 +188,27 @@ main {
 
 main h1{
   padding: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  color: #962525
 }
 
 main h2{
   padding: 0px 2% 0px 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
 }
 
 main h3{
   padding: 0px 2% 0px 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
 }
 
 main h4{
   padding: 0px 2% 0px 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
 }
 
 main table{

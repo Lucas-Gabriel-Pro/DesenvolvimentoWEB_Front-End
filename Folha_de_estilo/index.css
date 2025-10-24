@@ -143,8 +143,21 @@
 }
 */
 
+main a:link{
+    color: #ba86ff;
+}
+
+main a:visited{
+    color: #ba86ff;
+}
+
+main a:hover{
+    color: #7742bb;
+    font-weight: bold;
 
 }
+
+
 
 .projetos{
     background-color: #ffe7e7;
@@ -191,6 +204,7 @@
     color: #ba86ff;
     font-weight: bold;
 }
+
 
 .bloco_projeto {
     flex: 1;                  
