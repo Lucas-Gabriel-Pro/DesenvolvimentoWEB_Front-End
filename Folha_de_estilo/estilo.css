@@ -28,9 +28,9 @@ main {
 }
 
 
-@media(max-width: 440px){
+@media(max-width: 480px){
   main{
-    width: 440px;
+    width: 100%;
     background-color: #ffffff;
     margin: 0px;
   }

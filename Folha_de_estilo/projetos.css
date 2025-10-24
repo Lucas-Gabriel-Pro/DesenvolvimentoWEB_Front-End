@@ -13,13 +13,13 @@ th {
     background-color: #423783;
     color: white;
     border: 0px;
-    padding: 8px 8px;
+    padding: 4px 4px;
     font-size: 1rem;
     border: 1px solid #423783 ;
 }
 
 td{
-   padding: 8px 8px;
+   padding: 4px 4px;
    font-size: 0.8rem;
    border-left: 1px solid #423783;
 }

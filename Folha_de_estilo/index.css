@@ -42,11 +42,11 @@
     }
 }
 
-@media (max-width: 440px)
+@media (max-width: 480px)
 {
     .slides{
         display: flex;
-        width: 440px;
+        width: 450px;
         animation: slide 30s infinite; 
     }
 }
