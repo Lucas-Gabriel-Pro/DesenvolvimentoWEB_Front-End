@@ -4,6 +4,7 @@ html, body
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 19px;
   background-image: url(../imagens/background.png);
+  background-attachment: fixed;
 }
 
 a { text-decoration: none; }
@@ -15,6 +16,7 @@ main {
   background-color: #ffffff;
   margin: auto;
   padding-bottom: 1px;
+  box-shadow: 0px 0px 30px black;
 }
 
 @media (max-width: 899px) {
@@ -186,32 +188,37 @@ main {
       }
     }
 
-main h1{
+main > h1{
   padding: 2%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
   color: #3d008d;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.74);
 }
+
 
 main h2{
   padding: 0px 2% 0px 2%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: #5500c4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63);
+  
 }
 
 main h3{
   padding: 0px 2% 0px 2%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  color: #8456be;
+  font-size: 1.6rem;
+  color: #6500e0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 main h4{
   padding: 0px 2% 0px 2%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.0rem;
-  color: #962525;
+  font-size: 1.3rem;
+  color: #7c11ff;
 }
 
 main p{

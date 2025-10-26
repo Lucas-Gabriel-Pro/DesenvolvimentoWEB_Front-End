@@ -8,6 +8,7 @@
     margin: auto;
     overflow: hidden;
     padding: 0px;
+    box-shadow: 3px 3px 9px black;
 }
  
 @media (max-width: 768px) {
@@ -103,6 +104,8 @@
 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.349);
     
 }
 
@@ -144,8 +147,6 @@
 }
 
 
-
-
 main a:link, a:visited{
     color: #ba86ff;
     font-weight: bold;
@@ -155,7 +156,6 @@ main a:link, a:visited{
 main a:hover{
     color: #7742bb;
 }
-
 
 
 .projetos{
@@ -172,8 +172,6 @@ main a:hover{
 .projetos > p{
     color: #000000;
 }
-
-
 
 #projetos{
     display: flex;
@@ -260,6 +258,7 @@ main a:hover{
     display: block;
     margin: auto;
     margin-bottom: 20px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
     
 }
 

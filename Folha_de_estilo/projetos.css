@@ -34,14 +34,15 @@ ul {
     list-style: none;
     margin: 0%;
     padding-left: 1rem;
+    
 }
 
-a:link, a:visited{
+.main_link:link, .main_link:visited{
     color: #ba86ff;
     font-weight: bold;
 }
 
-a:hover{
+.main_link:hover{
     color: #7742bb;
 }
 
@@ -59,14 +60,34 @@ a:hover{
     padding: 12px;
     color: white;
     text-align: center;
+    margin-top: 3%;
 }
 
-.depoimento a:link, a:hover{
+.depoimento h3 {
+    color: white;
+}
+
+.depoimento q{
+    font-weight: bold;
+    
+}
+
+.depoimento p{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
+}
+
+.link{
+    color: #ffffff;
+    background-color: #d43e3e;
+}
+
+.link:link, .link:hover{
     margin: auto;
-    background-color: rgb(55, 34, 148);
+    background-color: #d32222;
     padding: 5px;
-    color: #ff0000;
+    color: #ffffff;
     border-radius: 10px;
+    font-weight: bolder;
 }
 
 .depoimento img{
