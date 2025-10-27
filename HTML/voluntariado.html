@@ -316,7 +316,7 @@
                 
 
                 <form action="enviar-inscricao.html" method="post">
-                    <h2 id="inscricao_voluntario">CADASTRO DE VOLUNTÁRIO</h2>
+                    <h2 id="inscricao_voluntario">REGISTRO DE VOLUNTÁRIO</h2>
                     <p>Preencha seus dados para que a equipe do projeto entre em contato e combine os próximos passos.</p>
 
                     <fieldset>
@@ -354,22 +354,24 @@
                             <option value="remoto">Remoto</option>
                             <option value="hibrido">Híbrido</option>
                         </select>
-                        <br><br>
-                        <label for="projeto">Projeto (opcional)</label><br>
-                        <input id="projeto" name="projeto" type="text" placeholder="Se estiver se candidatando a um projeto específico, informe aqui">
+                        <input id="projeto" name="projeto" type="text" placeholder="Nome do projeto">
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Mensagem para ONG - Escreva suas Habilidades e competências"></textarea>
                     </fieldset>
-
-        
                     <fieldset>
-                        <legend>Diretrizes e Autorização</legend>
-                        <label for="mensagem">Mensagem</label><br>
-                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte brevemente sobre suas motivações ou habilidades."></textarea>
-                        <p><label><input type="checkbox" name="consentimento_dados" required>Autorizo o uso dos meus dados para contato sobre oportunidades de voluntariado (LGPD).</label></p>
-                        <p><label><input type="checkbox" name="aceite_conduta" required>Declaro que li e concordo com os compromissos e diretrizes do voluntariado.</label></p>
-                        <p><a href="#compromissos_diretrizes">Leia as diretrizes</a></p>
+                        <h3>Diretrizes e Autorização</h3>
+                        <div class="checkbox">
+                            <input class="input_checkbox" type="checkbox" name="consentimento_dados" required>
+                            <p>Autorizo o uso dos meus dados para contato sobre oportunidades de voluntariado (LGPD).</p>
+                        </div>
+                        
+                        <div class="checkbox">
+                            <input class="input_checkbox" type="checkbox" name="aceite_conduta" required>
+                            <p class="texto_form">Declaro que li e concordo com os compromissos e diretrizes do voluntariado.</p>
+                        </div>
+                        <a href="#compromissos_diretrizes">Leia as diretrizes</a>
                     </fieldset>
                     <br>
-                    <button type="submit" aria-label="Enviar inscrição de voluntário">Enviar inscrição</button>
+                    <button type="submit" aria-label="Enviar inscrição de voluntário">REGITRAR-SE</button>
                 </form>
             </section>
 
