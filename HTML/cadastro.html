@@ -54,81 +54,56 @@
             </section>
 
             <section aria-labelledby="formulario_inscricao">
-                <h2 id="formulario_inscricao">Formulário de inscrição</h2>
-                <p>Preencha atentamente os campos abaixo. As informações ajudam o portal a validar sua organização e conectar você às pessoas certas.</p>
-
                 <form action="processar_inscricao.html" method="post">
 
+                    <h2 id="formulario_inscricao">REGISTRO DE ONG</h2>
+                    <p>Preencha atentamente os campos abaixo. As informações ajudam o portal a validar sua organização e conectar você às pessoas certas.</p>
+
                     <fieldset>
-                        <legend><strong>Informações da Organização</strong></legend>
-
-                        <label for="nome_ong">Nome da ONG:</label><br>
-                        <input type="text" id="nome_ong" name="nome_ong" required><br><br>
-
-                        <label for="cnpj">CNPJ:</label><br>
-                        <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" required><br><br>
-
-                        <label for="fundacao">Ano de fundação:</label><br>
-                        <input type="number" id="fundacao" name="fundacao" min="1900" max="2099" step="1" required><br><br>
-
-                        <label for="area_atuacao">Área principal de atuação:</label><br>
+                        <h3>Informações da Organização</h3>
+                        <input type="text" id="nome_ong" name="nome_ong" required placeholder="Nome da ONG">
+                        <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ" required>
+                        <input type="number" id="fundacao" name="fundacao" min="1950" max="2025" step="1" required placeholder="Ano de fundação">
                         <select id="area_atuacao" name="area_atuacao" required>
-                            <option value="">Selecione</option>
+                            <option value="" disabled selected hidden>Área de atuação</option>
                             <option value="educacao">Educação</option>
                             <option value="saude">Saúde</option>
                             <option value="animais">Proteção Animal</option>
                             <option value="meio_ambiente">Meio Ambiente</option>
                             <option value="assistencia_social">Assistência Social</option>
                             <option value="outros">Outros</option>
-                        </select><br><br>
-
-                        <label for="descricao">Descrição da ONG:</label><br>
-                        <textarea id="descricao" name="descricao" rows="5" cols="50" placeholder="Fale sobre a missão, visão e objetivos da sua ONG..." required></textarea><br><br>
+                        </select>
+                        <textarea id="descricao" name="descricao" placeholder="Missão, visão e objetivo da ONG..." required></textarea>
                     </fieldset>
 
                     <fieldset>
-                        <legend><strong>Localização</strong></legend>
-
-                        <label for="endereco">Endereço:</label><br>
-                        <input type="text" id="endereco" name="endereco" required><br><br>
-
-                        <label for="cidade">Cidade:</label><br>
-                        <input type="text" id="cidade" name="cidade" required><br><br>
-
-                        <label for="estado">Estado:</label><br>
-                        <input type="text" id="estado" name="estado" maxlength="2" placeholder="UF" required><br><br>
+                        <h3>Localização</h3>
+                        <input type="text" id="endereco" name="endereco" required placeholder="Endereço">
+                        <input type="text" id="cidade" name="cidade" required placeholder="Cidade">
+                        <input type="text" id="estado" name="estado" maxlength="2" placeholder="Estado (UF)" required>
                     </fieldset>
 
                     <fieldset>
-                        <legend><strong>Contato</strong></legend>
-
-                        <label for="email">E-mail institucional:</label><br>
-                        <input type="email" id="email" name="email" required><br><br>
-
-                        <label for="telefone">Telefone de contato:</label><br>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required><br><br>
-
-                        <label for="site">Site ou rede social (opcional):</label><br>
-                        <input type="url" id="site" name="site" placeholder="https://"><br><br>
+                        <h3>Contato</h3>
+                        <input type="email" id="email" name="email" required placeholder="E-mail">
+                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+                        <input type="url" id="site" name="site" placeholder="Site ou rede social">
                     </fieldset>
 
                     <fieldset>
-                        <legend><strong>Documentação e Representante</strong></legend>
-
-                        <label for="responsavel">Nome do responsável legal:</label><br>
-                        <input type="text" id="responsavel" name="responsavel" required><br><br>
-
-                        <label for="cargo">Cargo na organização:</label><br>
-                        <input type="text" id="cargo" name="cargo" required><br><br>
-
-                        <label for="documento">Envio de documentos (estatuto, registro, etc.):</label><br>
-                        <input type="file" id="documento" name="documento" accept=".pdf,.jpg,.png"><br><br>
+                        <h3>Documentação</h3>
+                        <input type="text" id="responsavel" name="responsavel" required placeholder="Responsável pela inscrição">
+                        <input type="text" id="cargo" name="cargo" required placeholder="Cargo do responsável">
+                        <p id="form_texto-p">Comprove a existência da ONG (estatuto, registro, etc.)</p>
+                        <input type="file" id="documento" name="documento" accept=".pdf,.jpg,.png" placeholder="Envio de documentos (estatuto, registro, etc.)">
                     </fieldset>
 
-                    <p><em>Ao enviar este formulário, você declara que as informações são verdadeiras e autoriza o uso dos dados para fins de verificação e contato.</em></p>
+                    <p id="form_texto-p"><em>Ao enviar este formulário, você declara que as informações são verdadeiras e autoriza o uso dos dados para fins de verificação e contato.</em></p>
 
-                    <button type="submit">Enviar inscrição</button>
-                    <button type="reset">Limpar campos</button>
+                    <div id="form_botoes">
+                        <button type="submit">Enviar inscrição</button>
+                        <button type="reset">Limpar campos</button>
+                    </div>
                 </form>
             </section>
 

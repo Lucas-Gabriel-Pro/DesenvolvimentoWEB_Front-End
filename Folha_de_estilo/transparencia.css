@@ -1,0 +1,29 @@
+table {
+    
+    border-collapse: collapse;
+    margin: auto;
+    width: 90%;
+    
+}
+
+th {
+    background-color: #423783;
+    color: white;
+    border: 0px;
+    padding: 4px 4px;
+    font-size: 1rem;
+    border: 1px solid #423783 ;
+}
+
+td{
+   padding: 4px 4px;
+   font-size: 0.8rem;
+   border-left: 1px solid #423783;
+}
+
+table tr {
+    border: 1px solid #423783;
+}
+table caption{
+    caption-side: bottom;
+}

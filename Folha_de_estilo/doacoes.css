@@ -20,7 +20,7 @@ form h2 {
 form h3
 {
     color: white;
-    font-size: ;
+    font-size: 1.4rem;
 }
 
 form p {
@@ -33,7 +33,7 @@ form label{
 }
 
 
-form #nome, #email, #telefone, #cpf_cnpj{
+form #nome, #email, #telefone, #cpf_cnpj, #valor, #comprovante{
     display: inline-block;
     padding: 15px;
     color: white;
@@ -42,6 +42,14 @@ form #nome, #email, #telefone, #cpf_cnpj{
     margin: 10px;
     border: none;
     border-radius: 8px;
+}
+
+form .checkbox{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0px;
+    padding: 0%;
+    margin: 0%;
 }
 
 form select{

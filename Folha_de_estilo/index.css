@@ -52,7 +52,6 @@
     }
 }
 
-
 .slides img {
     width: 100%;
     height: auto;
@@ -126,7 +125,6 @@
     padding: 6px 30px;
 }
 
-
 #texto_slide .item_slide:hover{
     color: #ffffff;
     background-color: #0f0066;
@@ -137,12 +135,18 @@
     background-color: #2000d8;
 }
 
+/*Sessões*/
+
+#sobre, #depoimentos, #destaques, #transparencia, #institucional, #ajuda{
+    padding: 2%;
+}
+
 /*Projetos*/
 
 
 .sobre{
     background-color: #ffffff;
-    padding: 2%;
+    padding: 4% 0%;
 
 }
 
@@ -161,6 +165,7 @@ main a:hover{
 .projetos{
     background-color: #efedff;
     padding: 2%;
+    margin: 3%;
 }
 
 .projetos > h2{
@@ -172,6 +177,7 @@ main a:hover{
 .projetos > p{
     color: #000000;
 }
+
 
 #projetos{
     display: flex;
@@ -207,6 +213,7 @@ main a:hover{
     flex: 1;                  
     padding: 2%;
     border-radius: 5px;
+    margin: 4% 1%;
     
 }
 
@@ -221,8 +228,6 @@ main a:hover{
     font-size: 1.5rem;
 
 }
-
-
 
 
 #aprender_crescer{
@@ -248,12 +253,12 @@ main a:hover{
 }
 
 
-.depoimentos article{
+#depoimentos article{
     width: 700px;
     background-color: #ba86ff;
     margin: 1rem;
     padding: 2rem;
-    border-radius: 24px;
+    border-radius: 10px;
     color: white;
     display: block;
     margin: auto;
@@ -271,21 +276,29 @@ main a:hover{
 }
 }
 
-
-
-.depoimentos article img{
-    border-radius: 12px;
+#depoimentos article img{
+    display: block;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 3px 3px 9px black;
+    
 }
 
-
+#depoimentos article p {
+    text-align: center;
+    text-shadow: ;
+    font-weight: bold;
+    text-shadow: 0.6px 0.6px 2px rgba(0, 0, 0, 0.301);
+}
 .destaques{
     background-color: #ffffff;
-    padding: 2%;
+    padding: 4% 0%;
 }
 
 .transparencia{
     background-color: #efedff;
-    padding: 2%;
+    padding: 4% 0%;
 
 }
 
@@ -299,5 +312,5 @@ main a:hover{
 
 .institucional{
     background-color: #ffffff;
-    padding: 4%;
+    padding: 4% 0%;
 }

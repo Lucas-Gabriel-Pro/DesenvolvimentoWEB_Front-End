@@ -1,0 +1,124 @@
+form {
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 440px;
+    background-color: #242461;
+    border-radius: 8px;
+}
+
+fieldset{
+    border: none;
+}
+
+form h2 {
+    font-size: 1.6rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+form h3
+{
+    color: white;
+    font-size: 1.4rem;
+}
+
+form p {
+    color: white;
+    padding-left: 24px;
+}
+
+form #form_texto-p{
+    font-size: 0.74rem;
+}
+
+
+
+
+form #nome_ong, #cnpj, #fundacao, #endereco, #cidade, #estado,
+#email, #telefone, #site, #responsavel, #cargo, #documento {
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    background-color: #3f3f85;
+    width: 95%;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+form select{
+    display: block;
+    padding: 15px;
+    color: white;
+    background-color: #3f3f85;
+    width: 90%;
+    margin: 20px auto ;
+    border: none;
+    border-radius: 8px;
+}
+
+
+input::placeholder {
+  color: #ffffff;
+}
+
+
+form textarea {
+    display: block;
+    resize: none;
+    padding: 15px;
+    color: white;
+    background-color: #3f3f85;
+    width: 95%;
+    height: 200px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 8px;
+}
+
+form textarea::placeholder{
+    color: #ffffff;
+}
+
+form .checkbox{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0px;
+    margin: 0px;
+}
+
+form a, a:link, a:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+form a:hover{
+    color: #b4bcff;
+}
+
+form #form_botoes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    gap: 10px;
+
+}
+
+form button{
+    display: grid;
+    padding: 15px;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
+    background-color: #60609c;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+form button:active{
+    background-color: #57579c;
+}
