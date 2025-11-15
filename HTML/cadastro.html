@@ -6,6 +6,7 @@
         <meta name="description" content="Conectamos ONGs, voluntários e doadores para transformar boas intenções em ações reais. Participe, doe ou cadastre sua ONG.">
         <link rel="stylesheet" href="../Folha_de_estilo/estilo.css">
         <link rel="stylesheet" href="../Folha_de_estilo/cadastro.css">
+        <script src="../Scripts/cadastro.js" defer></script>
         <title>Cadastro - JuntosSomos+Fortes</title>
     </head>
 
@@ -54,57 +55,57 @@
             </section>
 
             <section aria-labelledby="formulario_inscricao">
-                <form action="processar_inscricao.html" method="post">
-
-                    <h2 id="formulario_inscricao">REGISTRO DE ONG</h2>
-                    <p>Preencha atentamente os campos abaixo. As informações ajudam o portal a validar sua organização e conectar você às pessoas certas.</p>
-
-                    <fieldset>
-                        <h3>Informações da Organização</h3>
-                        <input type="text" id="nome_ong" name="nome_ong" required placeholder="Nome da ONG">
-                        <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ" required>
-                        <input type="number" id="fundacao" name="fundacao" min="1950" max="2025" step="1" required placeholder="Ano de fundação">
-                        <select id="area_atuacao" name="area_atuacao" required>
-                            <option value="" disabled selected hidden>Área de atuação</option>
-                            <option value="educacao">Educação</option>
-                            <option value="saude">Saúde</option>
-                            <option value="animais">Proteção Animal</option>
-                            <option value="meio_ambiente">Meio Ambiente</option>
-                            <option value="assistencia_social">Assistência Social</option>
-                            <option value="outros">Outros</option>
-                        </select>
-                        <textarea id="descricao" name="descricao" placeholder="Missão, visão e objetivo da ONG..." required></textarea>
-                    </fieldset>
-
-                    <fieldset>
-                        <h3>Localização</h3>
-                        <input type="text" id="endereco" name="endereco" required placeholder="Endereço">
-                        <input type="text" id="cidade" name="cidade" required placeholder="Cidade">
-                        <input type="text" id="estado" name="estado" maxlength="2" placeholder="Estado (UF)" required>
-                    </fieldset>
-
-                    <fieldset>
-                        <h3>Contato</h3>
-                        <input type="email" id="email" name="email" required placeholder="E-mail">
-                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
-                        <input type="url" id="site" name="site" placeholder="Site ou rede social">
-                    </fieldset>
-
-                    <fieldset>
-                        <h3>Documentação</h3>
-                        <input type="text" id="responsavel" name="responsavel" required placeholder="Responsável pela inscrição">
-                        <input type="text" id="cargo" name="cargo" required placeholder="Cargo do responsável">
-                        <p id="form_texto-p">Comprove a existência da ONG (estatuto, registro, etc.)</p>
-                        <input type="file" id="documento" name="documento" accept=".pdf,.jpg,.png" placeholder="Envio de documentos (estatuto, registro, etc.)">
-                    </fieldset>
-
-                    <p id="form_texto-p"><em>Ao enviar este formulário, você declara que as informações são verdadeiras e autoriza o uso dos dados para fins de verificação e contato.</em></p>
-
-                    <div id="form_botoes">
-                        <button type="submit">Enviar inscrição</button>
-                        <button type="reset">Limpar campos</button>
-                    </div>
-                </form>
+              <form id="form-ong" action="processar_inscricao.html" method="post" enctype="multipart/form-data">
+                <h2 id="formulario_inscricao">REGISTRO DE ONG</h2>
+                <p>Preencha atentamente os campos abaixo. As informações ajudam o portal a validar sua organização e conectar você às pessoas certas.</p>
+                <fieldset>
+                  <h3>Informações da Organização</h3>
+                  <input type="text" id="nome_ong" name="nome_ong" required minlength="3" placeholder="Nome da ONG">
+                  <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ" required inputmode="numeric" aria-describedby="ajuda-cnpj">
+                  <small id="ajuda-cnpj">Aceita “somente números” (14 dígitos) ou formatado.</small>
+                  <input type="number" id="fundacao" name="fundacao" min="1950" max="2025" step="1" required placeholder="Ano de fundação">
+                  <select id="area_atuacao" name="area_atuacao" required>
+                    <option value="" disabled selected hidden>Área de atuação</option>
+                    <option value="educacao">Educação</option>
+                    <option value="saude">Saúde</option>
+                    <option value="animais">Proteção Animal</option>
+                    <option value="meio_ambiente">Meio Ambiente</option>
+                    <option value="assistencia_social">Assistência Social</option>
+                    <option value="outros">Outros</option>
+                  </select>
+                  <textarea id="descricao" name="descricao" placeholder="Missão, visão e objetivo da ONG..." required minlength="20"></textarea>
+                </fieldset>
+                <fieldset>
+                  <h3>Localização</h3>
+                  <input type="text" id="cep" name="cep" required placeholder="CEP (ex: 70000-000)">
+                  <input type="text" id="endereco" name="endereco" required placeholder="Endereço">
+                  <input type="text" id="cidade" name="cidade" required placeholder="Cidade">
+                  <input type="text" id="estado" name="estado" maxlength="2" placeholder="Estado (UF)" required aria-describedby="ajuda-uf">
+                  <small id="ajuda-uf">Use a sigla da UF (ex.: SP, RJ, GO).</small>
+                </fieldset>
+                <fieldset>
+                  <h3>Contato</h3>
+                  <input type="email" id="email" name="email" required placeholder="E-mail">
+                  <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required inputmode="tel" aria-describedby="ajuda-telefone">
+                  <small id="ajuda-telefone">Informe DDD + número (10 ou 11 dígitos). Pode conter espaços/parênteses.</small>
+                  <input type="url" id="site" name="site" placeholder="Site ou rede social">
+                </fieldset>
+                <fieldset>
+                  <h3>Documentação</h3>
+                  <input type="text" id="responsavel" name="responsavel" required placeholder="Responsável pela inscrição">
+                  <input type="text" id="cargo" name="cargo" required placeholder="Cargo do responsável">
+                  <p id="form_texto-p">Comprove a existência da ONG (estatuto, registro, etc.)</p>
+                  <input type="file" id="documento" name="documento" accept=".pdf,.jpg,.png" aria-describedby="ajuda-doc">
+                  <small id="ajuda-doc">PDF/JPG/PNG até 5 MB (opcional).</small>
+                </fieldset>
+                <p id="form_texto-p"><em>Ao enviar este formulário, você declara que as informações são verdadeiras e autoriza o uso dos dados para fins de verificação e contato.</em></p>
+                <div id="form_botoes">
+                  <button type="submit">Enviar inscrição</button>
+                  <button type="reset">Limpar campos</button>
+                </div>
+              </form>
+              <!-- JS externo -->
+              <script src="js/validar-form.js" defer></script>
             </section>
 
             <section>

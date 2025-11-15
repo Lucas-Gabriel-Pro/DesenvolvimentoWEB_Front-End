@@ -15,6 +15,61 @@
     <title>JuntosSomos+Fortes</title>
   </head>
   <body>
+<!--
+GUIA RÁPIDO (comentários informativos — não altera o funcionamento)
+-------------------------------------------------------------------
+Tags principais usadas no documento e suas funções:
+- <!DOCTYPE html>: informa ao navegador o tipo de documento (HTML5).
+- <html lang="pt-BR">: elemento raiz; 'lang' informa o idioma aos leitores de tela.
+- <head>: metadados da página (charset, viewport, descrição, CSS, título).
+- <meta charset="utf-8">: define a codificação de caracteres (acentos corretos).
+- <meta name="viewport" ...>: responsividade em dispositivos móveis.
+- <meta name="description">: resumo para buscadores (SEO).
+- <link rel="stylesheet" href="...">: carrega folhas de estilo CSS.
+- <title>: título exibido na aba do navegador e por leitores de tela.
+- <body>: conteúdo visível da página.
+- <header>: cabeçalho; bom para landmark "banner".
+- <nav>: navegação; landmark "navigation".
+- <main>: conteúdo principal; landmark "main" (um por página).
+- <section>: agrupa conteúdo temático, geralmente com título (h2/h3).
+- <article>: conteúdo independente (post, bloco de projeto, etc.).
+- <aside>: conteúdo complementar.
+- <h1..h6>: hierarquia de títulos. Deve haver um <h1> por página.
+- <p>: parágrafos.
+- <ul>/<ol>/<li>: listas.
+- <a href="...">: links; texto claro e descritivo.
+- <img src="..." alt="...">: imagens; 'alt' descreve para leitores de tela.
+- <figure>/<figcaption>: imagem com legenda semanticamente associada.
+- <table>, <thead>, <tbody>, <tfoot>, <tr>, <th>, <td>: dados tabulares; use 'scope' em <th>.
+- <details>/<summary>: conteúdo expansível; summary deve ser claro.
+- <form action method>: formulário; define destino e método de envio.
+- <fieldset>/<legend>: agrupam campos e nomeiam conjuntos lógicos.
+- <label for="id">: rótulo acessível para controle com 'id' correspondente.
+- <input>, <select>, <textarea>: campos de formulário.
+  Atributos comuns:
+  • required (torna obrigatório)
+  • placeholder (dica de preenchimento)
+  • autocomplete (sugestões do navegador)
+  • inputmode/pattern (ajuda de teclado/validação)
+  • aria-describedby (associa ajuda/erro a um campo)
+
+Sugestões de Acessibilidade (sem alterar o código existente):
+- Forneça 'aria-label' claro em <nav> quando houver várias navegações (ex.: 'Navegação principal', 'Navegação do rodapé').
+- Para o item ativo do menu, manter 'aria-current="page"' no link da página atual.
+- Em formulários, preferir <label> visíveis vinculados por 'for'/'id'. Evitar depender apenas de 'placeholder'.
+- Em <img>, sempre preencher 'alt' descritivo. Quando decorativa, usar alt="" (vazio).
+- Em tabelas, garantir 'scope="col"'/ 'scope="row"' em <th> e usar <caption> para título da tabela.
+- Em <details>, garantir que o <summary> seja compreensível sem contexto (ex.: 'Doação via PIX').
+- Evitar usar apenas cores para indicar estados. Fornecer texto/ícones acessíveis.
+- Garantir contraste adequado entre texto e fundo conforme WCAG (nível AA).
+- Manter ordem lógica de títulos: h1 > h2 > h3 ... sem saltos desnecessários.
+- Em botões/links, textos como 'Clique aqui' devem ser evitados; prefira rótulos autoexplicativos.
+
+Observação: Estas anotações estão apenas em comentário para orientar melhorias sem modificar o código.
+-------------------------------------------------------------------
+
+-->
+
 
     <!--
       HEADER: Cabeçalho do site.
@@ -44,7 +99,7 @@
           <li><a href="contato.html">Contato</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="login.html">Entre</a></li>
-          <li><a href="cadastro.html">Incrição</a></li> 
+          <li><a href="cadastro.html">Inscrição</a></li> 
         </ul>
       </nav>
     </header>

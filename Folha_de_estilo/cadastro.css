@@ -35,7 +35,8 @@ form #form_texto-p{
 
 
 
-form #nome_ong, #cnpj, #fundacao, #endereco, #cidade, #estado,
+form #nome_ong,
+#cnpj, #fundacao, #cep, #endereco, #cidade, #estado,
 #email, #telefone, #site, #responsavel, #cargo, #documento {
     display: inline-block;
     padding: 15px;
@@ -58,6 +59,9 @@ form select{
     border-radius: 8px;
 }
 
+form small{
+    color: #ffffff;
+}
 
 input::placeholder {
   color: #ffffff;
